@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  title: "joydada"
+  title: "joy dada"
   site-url: https://jdada360.github.io
   description: "Joy Dada — research, small projects, maps, and CV."
   page-navigation: true
@@ -11,7 +11,7 @@ website:
   favicon: assets/img/logo.svg
   navbar:
     logo: assets/img/logo.svg
-    logo-alt: "joydada fingerprint logo"
+    logo-alt: "joy dada fingerprint logo"
     right:
       - text: About
         href: about/index.qmd

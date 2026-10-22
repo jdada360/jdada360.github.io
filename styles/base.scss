@@ -42,7 +42,11 @@ a:hover { color: $jd-accent; text-decoration-thickness: .14em; }
 .callout, .quarto-appendix-contents { border-radius: $border-radius; }
 ::selection { background: $pink-300; color: $indigo-900; }
 
-.navbar-logo { height: 30px; width: 30px; max-height: 30px; margin-right: .4rem; transition: transform .2s ease; }
+.navbar-logo { height: 30px; width: 30px; max-height: 30px; margin-left: .4rem; transition: transform .2s ease; }
+// Fingerprint sits after the name: put the logo link second in the brand row.
+.navbar-brand-container { display: flex; align-items: center; }
+.navbar-brand-container .navbar-brand { margin-right: 0; }
+.navbar-brand-container .navbar-brand-logo { order: 2; margin-left: .1rem; }
 .navbar-brand:hover .navbar-logo { transform: scale(1.15); }
 
 // centered landing page
