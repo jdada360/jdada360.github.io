@@ -1,6 +1,5 @@
 ---
 title: "Research"
-subtitle: "Supply-side health policy, health care labor markets, and behavioral health."
 ---
 
 ## Working papers
