@@ -9,6 +9,7 @@ csl: american-medical-association.csl
 citation:
   type: webpage
   url: https://jdada360.github.io/projects/mh-facility-trends-2026-10/
+  doi: 10.5281/zenodo.23550528
 ---
 
 Every year, SAMHSA asks every known mental health treatment facility in the U.S. which services it offers and which payments it accepts. The answers are public, but over the years the survey changed its name, its file format, and some of its variable names. I combined ten years of files, 2015 through 2024, into one series. The charts below let you see which services became more or less common without cleaning the survey files yourself. Use the Years toggle above the charts to view all years together, only the N-MHSS years (2015–2020), or only the N-SUMHSS years (2021–2024).
@@ -42,7 +43,7 @@ trendPlot = (series) => Plot.plot({
   className: "mh-chart",
   title: series[0].label,
   subtitle: `Share of U.S. mental health treatment facilities, ${series[0].year}–${series.at(-1).year}`,
-  caption: "Source: Dada J. Trends in the Services Offered by US Mental Health Treatment Facilities, 2015–2024. October 21, 2026. https://jdada360.github.io/projects/mh-facility-trends-2026-10/. Data from SAMHSA N-MHSS (2015–2020) and N-SUMHSS (2021–2024).",
+  caption: "Source: Dada J. Trends in the Services Offered by US Mental Health Treatment Facilities, 2015–2024. October 21, 2026. doi:10.5281/zenodo.23550528. Data from SAMHSA N-MHSS (2015–2020) and N-SUMHSS (2021–2024).",
   width: Math.min(width, 860),
   height: 420,
   marginLeft: 56,
@@ -212,7 +213,7 @@ This is a tool for people who want to explore how the availability of mental hea
 - [trends.csv](trends.csv): one row per item and year, with the item name, group, share of facilities offering it, and the number of facilities that answered.
 - [sample.csv](sample.csv): the number of facilities in the sample each year.
 
-Please cite this page if you use the data.
+Please cite this page if you use the data. The data and code are archived on Zenodo: [doi:10.5281/zenodo.23550528](https://doi.org/10.5281/zenodo.23550528).
 
 ### Sources
 
