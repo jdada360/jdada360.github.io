@@ -1,0 +1,541 @@
+"year","variable","label","group","chart","share","n_facilities"
+2015,"SETTINGIP","24-hour hospital inpatient","Treatment setting","Settings and payment",0.1649,12826
+2015,"SETTINGRC","24-hour residential","Treatment setting","Settings and payment",0.1835,12826
+2015,"SETTINGDTPH","Partial hospitalization/day treatment","Treatment setting","Settings and payment",0.1773,12826
+2015,"SETTINGOP","Outpatient","Treatment setting","Settings and payment",0.7516,12826
+2015,"TREATPSYCHOTHRPY","Individual psychotherapy","Treatment approach","Services",0.8892,12822
+2015,"TREATFAMTHRPY","Couples/family therapy","Treatment approach","Services",0.6791,12822
+2015,"TREATGRPTHRPY","Group therapy","Treatment approach","Services",0.8083,12822
+2015,"TREATCOGTHRPY","Cognitive behavioral therapy","Treatment approach","Services",0.8562,12822
+2015,"TREATDIALTHRPY","Dialectical behavior therapy","Treatment approach","Services",0.4747,12822
+2015,"TREATDUALMHSA","Integrated mental health and substance use treatment","Treatment approach","Services",0.495,12822
+2015,"TREATACTVTYTHRPY","Activity therapy","Treatment approach","Services",0.4077,12822
+2015,"TREATELECTRO","Electroconvulsive therapy","Treatment approach","Services",0.0462,12822
+2015,"TREATTELEMEDINCE","Telemedicine/telehealth therapy","Treatment approach","Services",0.2224,12822
+2015,"ASSERTCOMM","Assertive Community Treatment (ACT)","Services and practices","Services",0.1341,12824
+2015,"MHINTCASEMGMT","Intensive Case Management (ICM)","Services and practices","Services",0.2172,12824
+2015,"MHCASEMGMT","Case Management (CM)","Services and practices","Services",0.6187,12823
+2015,"MHCOURTORDERED","Court-ordered treatment","Services and practices","Services",0.4018,12824
+2015,"MHCHRONIC","Chronic Disease/illness Management (CDM)","Services and practices","Services",0.1684,12824
+2015,"ILLNESSMGMT","Illness Management and Recovery (IMR)","Services and practices","Services",0.2478,12823
+2015,"PRIMARYCARE","Integrated primary care services","Services and practices","Services",0.2194,12824
+2015,"DIETEXERCOUNSEL","Diet and exercise counseling","Services and practices","Services",0.2737,12824
+2015,"FAMPSYCHED","Family psychoeducation","Services and practices","Services",0.5472,12824
+2015,"MHEDUCATION","Education services","Services and practices","Services",0.286,12824
+2015,"MHHOUSING","Housing services","Services and practices","Services",0.1879,12824
+2015,"SUPPHOUSING","Supported housing","Services and practices","Services",0.1407,12824
+2015,"MHPSYCHREHAB","Psychosocial rehabilitation services","Services and practices","Services",0.3622,12824
+2015,"MHVOCREHAB","Vocational rehabilitation services","Services and practices","Services",0.1424,12824
+2015,"SUPPEMPLOY","Supported employment","Services and practices","Services",0.1545,12824
+2015,"FOSTERCARE","Therapeutic foster care","Services and practices","Services",0.0479,12824
+2015,"MHLEGAL","Legal advocacy","Services and practices","Services",0.0491,12824
+2015,"MHEMGCY","Psychiatric emergency walk-in services","Services and practices","Services",0.2738,12824
+2015,"MHSUICIDE","Suicide prevention services","Services and practices","Services",0.4792,12824
+2015,"MHCONSUMER","Peer support services","Services and practices","Services",0.2058,12824
+2015,"MHTOBACCOUSE","Screening for tobacco use","Services and practices","Services",0.4225,12824
+2015,"MHTOBACCOCESS","Smoking/vaping/tobacco cessation counseling","Services and practices","Services",0.3258,12824
+2015,"MHNICOTINEREP","Nicotine replacement therapy","Services and practices","Services",0.2143,12824
+2015,"SMOKINGCESSATION","Non-nicotine smoking/tobacco cessation medications","Services and practices","Services",0.1754,12824
+2015,"CRISISTEAM2","Crisis intervention treatment team offered by facility","Services and practices","Services",0.4707,12811
+2015,"SED","Program for children with Serious Emotional Disturbance (SED)","Special programs","Services",0.3548,12823
+2015,"TAYOUNGADULTS","Program for young adults","Special programs","Services",0.2018,12823
+2015,"SPMI","Program for serious mental illness (SMI)","Special programs","Services",0.5003,12823
+2015,"ALZHDEMENTIA","Program for Alzheimer or dementia","Special programs","Services",0.0838,12823
+2015,"SPECGRPEATING","Program for eating disorders","Special programs","Services",0.11,12823
+2015,"POSTTRAUM","Program for post-traumatic stress disorder (PTSD)","Special programs","Services",0.3793,12823
+2015,"TRAUMATICBRAIN","Program for traumatic brain injury","Special programs","Services",0.0816,12823
+2015,"REVCHK5_MH","Accepts Medicaid","Payment","Settings and payment",0.8937,12573
+2015,"REVCHK8_MH","Accepts Medicare","Payment","Settings and payment",0.7037,12462
+2015,"REVCHK2_MH","Accepts private health insurance","Payment","Settings and payment",0.8056,12543
+2015,"REVCHK1_MH","Accepts cash or self-payment","Payment","Settings and payment",0.8512,12538
+2015,"REVCHK10_MH","Accepts state-financed health insurance","Payment","Settings and payment",0.6631,10987
+2015,"REVCHK15_MH","Accepts federal military insurance","Payment","Settings and payment",0.5263,11189
+2015,"REVCHK17_MH","Accepts Indian Health Service (IHS)/Tribal/Urban (ITU) funds","Payment","Settings and payment",0.1012,8111
+2015,"FEESCALE","Uses sliding fee scale","Payment","Settings and payment",0.5578,12438
+2015,"PAYASST","Offers treatment at no charge or minimal payment","Payment","Settings and payment",0.5129,12429
+2016,"SETTINGIP","24-hour hospital inpatient","Treatment setting","Settings and payment",0.1652,12172
+2016,"SETTINGRC","24-hour residential","Treatment setting","Settings and payment",0.1717,12172
+2016,"SETTINGDTPH","Partial hospitalization/day treatment","Treatment setting","Settings and payment",0.1534,12172
+2016,"SETTINGOP","Outpatient","Treatment setting","Settings and payment",0.7555,12172
+2016,"TREATPSYCHOTHRPY","Individual psychotherapy","Treatment approach","Services",0.9048,12170
+2016,"TREATFAMTHRPY","Couples/family therapy","Treatment approach","Services",0.703,12170
+2016,"TREATGRPTHRPY","Group therapy","Treatment approach","Services",0.8408,12170
+2016,"TREATCOGTHRPY","Cognitive behavioral therapy","Treatment approach","Services",0.8784,12170
+2016,"TREATDIALTHRPY","Dialectical behavior therapy","Treatment approach","Services",0.5069,12170
+2016,"TREATDUALMHSA","Integrated mental health and substance use treatment","Treatment approach","Services",0.5248,12170
+2016,"TREATACTVTYTHRPY","Activity therapy","Treatment approach","Services",0.4401,12170
+2016,"TREATELECTRO","Electroconvulsive therapy","Treatment approach","Services",0.0476,12170
+2016,"TREATTELEMEDINCE","Telemedicine/telehealth therapy","Treatment approach","Services",0.26,12170
+2016,"ASSERTCOMM","Assertive Community Treatment (ACT)","Services and practices","Services",0.1376,12169
+2016,"MHINTCASEMGMT","Intensive Case Management (ICM)","Services and practices","Services",0.2336,12169
+2016,"MHCASEMGMT","Case Management (CM)","Services and practices","Services",0.6502,12169
+2016,"MHCOURTORDERED","Court-ordered treatment","Services and practices","Services",0.4344,12169
+2016,"MHCHRONIC","Chronic Disease/illness Management (CDM)","Services and practices","Services",0.1845,12169
+2016,"ILLNESSMGMT","Illness Management and Recovery (IMR)","Services and practices","Services",0.2656,12169
+2016,"PRIMARYCARE","Integrated primary care services","Services and practices","Services",0.2435,12169
+2016,"DIETEXERCOUNSEL","Diet and exercise counseling","Services and practices","Services",0.3059,12169
+2016,"FAMPSYCHED","Family psychoeducation","Services and practices","Services",0.6135,12169
+2016,"MHEDUCATION","Education services","Services and practices","Services",0.3067,12169
+2016,"MHHOUSING","Housing services","Services and practices","Services",0.2045,12169
+2016,"SUPPHOUSING","Supported housing","Services and practices","Services",0.1515,12169
+2016,"MHPSYCHREHAB","Psychosocial rehabilitation services","Services and practices","Services",0.4004,12169
+2016,"MHVOCREHAB","Vocational rehabilitation services","Services and practices","Services",0.1558,12169
+2016,"SUPPEMPLOY","Supported employment","Services and practices","Services",0.1668,12169
+2016,"FOSTERCARE","Therapeutic foster care","Services and practices","Services",0.0504,12169
+2016,"MHLEGAL","Legal advocacy","Services and practices","Services",0.0517,12169
+2016,"MHEMGCY","Psychiatric emergency walk-in services","Services and practices","Services",0.3059,12169
+2016,"MHSUICIDE","Suicide prevention services","Services and practices","Services",0.5403,12169
+2016,"MHCONSUMER","Peer support services","Services and practices","Services",0.2355,12169
+2016,"MHTOBACCOUSE","Screening for tobacco use","Services and practices","Services",0.4883,12169
+2016,"MHTOBACCOCESS","Smoking/vaping/tobacco cessation counseling","Services and practices","Services",0.3759,12169
+2016,"MHNICOTINEREP","Nicotine replacement therapy","Services and practices","Services",0.2514,12169
+2016,"SMOKINGCESSATION","Non-nicotine smoking/tobacco cessation medications","Services and practices","Services",0.2151,12169
+2016,"CRISISTEAM2","Crisis intervention treatment team offered by facility","Services and practices","Services",0.4796,12158
+2016,"SED","Program for children with Serious Emotional Disturbance (SED)","Special programs","Services",0.2846,12165
+2016,"TAYOUNGADULTS","Program for young adults","Special programs","Services",0.1536,12165
+2016,"SPMI","Program for serious mental illness (SMI)","Special programs","Services",0.3798,12165
+2016,"ALZHDEMENTIA","Program for Alzheimer or dementia","Special programs","Services",0.0575,12165
+2016,"SPECGRPEATING","Program for eating disorders","Special programs","Services",0.0701,12165
+2016,"POSTTRAUM","Program for post-traumatic stress disorder (PTSD)","Special programs","Services",0.2759,12165
+2016,"TRAUMATICBRAIN","Program for traumatic brain injury","Special programs","Services",0.0543,12165
+2016,"REVCHK5_MH","Accepts Medicaid","Payment","Settings and payment",0.8977,11916
+2016,"REVCHK8_MH","Accepts Medicare","Payment","Settings and payment",0.7022,11826
+2016,"REVCHK2_MH","Accepts private health insurance","Payment","Settings and payment",0.8144,11917
+2016,"REVCHK1_MH","Accepts cash or self-payment","Payment","Settings and payment",0.8546,11877
+2016,"REVCHK10_MH","Accepts state-financed health insurance","Payment","Settings and payment",0.6751,10517
+2016,"REVCHK15_MH","Accepts federal military insurance","Payment","Settings and payment",0.5405,10711
+2016,"REVCHK17_MH","Accepts Indian Health Service (IHS)/Tribal/Urban (ITU) funds","Payment","Settings and payment",0.1103,7935
+2016,"FEESCALE","Uses sliding fee scale","Payment","Settings and payment",0.5655,11740
+2016,"PAYASST","Offers treatment at no charge or minimal payment","Payment","Settings and payment",0.5284,11734
+2017,"SETTINGIP","24-hour hospital inpatient","Treatment setting","Settings and payment",0.1628,11582
+2017,"SETTINGRC","24-hour residential","Treatment setting","Settings and payment",0.173,11582
+2017,"SETTINGDTPH","Partial hospitalization/day treatment","Treatment setting","Settings and payment",0.1556,11582
+2017,"SETTINGOP","Outpatient","Treatment setting","Settings and payment",0.7644,11582
+2017,"TREATPSYCHOTHRPY","Individual psychotherapy","Treatment approach","Services",0.9112,11582
+2017,"TREATFAMTHRPY","Couples/family therapy","Treatment approach","Services",0.7106,11582
+2017,"TREATGRPTHRPY","Group therapy","Treatment approach","Services",0.8496,11582
+2017,"TREATCOGTHRPY","Cognitive behavioral therapy","Treatment approach","Services",0.8834,11582
+2017,"TREATDIALTHRPY","Dialectical behavior therapy","Treatment approach","Services",0.5245,11582
+2017,"TREATDUALMHSA","Integrated mental health and substance use treatment","Treatment approach","Services",0.5385,11582
+2017,"TREATACTVTYTHRPY","Activity therapy","Treatment approach","Services",0.4469,11582
+2017,"TREATELECTRO","Electroconvulsive therapy","Treatment approach","Services",0.0451,11582
+2017,"TREATTELEMEDINCE","Telemedicine/telehealth therapy","Treatment approach","Services",0.2925,11582
+2017,"ASSERTCOMM","Assertive Community Treatment (ACT)","Services and practices","Services",0.1367,11579
+2017,"MHINTCASEMGMT","Intensive Case Management (ICM)","Services and practices","Services",0.2379,11579
+2017,"MHCASEMGMT","Case Management (CM)","Services and practices","Services",0.6659,11579
+2017,"MHCOURTORDERED","Court-ordered treatment","Services and practices","Services",0.4476,11579
+2017,"MHCHRONIC","Chronic Disease/illness Management (CDM)","Services and practices","Services",0.1848,11579
+2017,"ILLNESSMGMT","Illness Management and Recovery (IMR)","Services and practices","Services",0.2715,11579
+2017,"PRIMARYCARE","Integrated primary care services","Services and practices","Services",0.2472,11579
+2017,"DIETEXERCOUNSEL","Diet and exercise counseling","Services and practices","Services",0.3081,11579
+2017,"FAMPSYCHED","Family psychoeducation","Services and practices","Services",0.6332,11579
+2017,"MHEDUCATION","Education services","Services and practices","Services",0.3044,11579
+2017,"MHHOUSING","Housing services","Services and practices","Services",0.2106,11579
+2017,"SUPPHOUSING","Supported housing","Services and practices","Services",0.1517,11579
+2017,"MHPSYCHREHAB","Psychosocial rehabilitation services","Services and practices","Services",0.4107,11579
+2017,"MHVOCREHAB","Vocational rehabilitation services","Services and practices","Services",0.1588,11579
+2017,"SUPPEMPLOY","Supported employment","Services and practices","Services",0.1693,11579
+2017,"FOSTERCARE","Therapeutic foster care","Services and practices","Services",0.0483,11579
+2017,"MHLEGAL","Legal advocacy","Services and practices","Services",0.0518,11579
+2017,"MHEMGCY","Psychiatric emergency walk-in services","Services and practices","Services",0.3096,11579
+2017,"MHSUICIDE","Suicide prevention services","Services and practices","Services",0.5705,11579
+2017,"MHCONSUMER","Peer support services","Services and practices","Services",0.246,11579
+2017,"MHTOBACCOUSE","Screening for tobacco use","Services and practices","Services",0.5148,11579
+2017,"MHTOBACCOCESS","Smoking/vaping/tobacco cessation counseling","Services and practices","Services",0.3913,11579
+2017,"MHNICOTINEREP","Nicotine replacement therapy","Services and practices","Services",0.2557,11579
+2017,"SMOKINGCESSATION","Non-nicotine smoking/tobacco cessation medications","Services and practices","Services",0.2277,11579
+2017,"CRISISTEAM2","Crisis intervention treatment team offered by facility","Services and practices","Services",0.4866,11571
+2017,"SED","Program for children with Serious Emotional Disturbance (SED)","Special programs","Services",0.328,11581
+2017,"TAYOUNGADULTS","Program for young adults","Special programs","Services",0.1776,11581
+2017,"SPMI","Program for serious mental illness (SMI)","Special programs","Services",0.4419,11581
+2017,"ALZHDEMENTIA","Program for Alzheimer or dementia","Special programs","Services",0.0623,11581
+2017,"SPECGRPEATING","Program for eating disorders","Special programs","Services",0.078,11581
+2017,"POSTTRAUM","Program for post-traumatic stress disorder (PTSD)","Special programs","Services",0.3282,11581
+2017,"TRAUMATICBRAIN","Program for traumatic brain injury","Special programs","Services",0.0603,11581
+2017,"REVCHK5_MH","Accepts Medicaid","Payment","Settings and payment",0.9037,11378
+2017,"REVCHK8_MH","Accepts Medicare","Payment","Settings and payment",0.7024,11305
+2017,"REVCHK2_MH","Accepts private health insurance","Payment","Settings and payment",0.8147,11368
+2017,"REVCHK1_MH","Accepts cash or self-payment","Payment","Settings and payment",0.8528,11347
+2017,"REVCHK10_MH","Accepts state-financed health insurance","Payment","Settings and payment",0.6727,10066
+2017,"REVCHK15_MH","Accepts federal military insurance","Payment","Settings and payment",0.5402,10241
+2017,"REVCHK17_MH","Accepts Indian Health Service (IHS)/Tribal/Urban (ITU) funds","Payment","Settings and payment",0.1127,7774
+2017,"FEESCALE","Uses sliding fee scale","Payment","Settings and payment",0.5629,11211
+2017,"PAYASST","Offers treatment at no charge or minimal payment","Payment","Settings and payment",0.521,11208
+2018,"SETTINGIP","24-hour hospital inpatient","Treatment setting","Settings and payment",0.1644,11682
+2018,"SETTINGRC","24-hour residential","Treatment setting","Settings and payment",0.1654,11682
+2018,"SETTINGDTPH","Partial hospitalization/day treatment","Treatment setting","Settings and payment",0.1494,11682
+2018,"SETTINGOP","Outpatient","Treatment setting","Settings and payment",0.7666,11682
+2018,"TREATPSYCHOTHRPY","Individual psychotherapy","Treatment approach","Services",0.9148,11678
+2018,"TREATFAMTHRPY","Couples/family therapy","Treatment approach","Services",0.7063,11678
+2018,"TREATGRPTHRPY","Group therapy","Treatment approach","Services",0.8598,11678
+2018,"TREATCOGTHRPY","Cognitive behavioral therapy","Treatment approach","Services",0.8926,11678
+2018,"TREATDIALTHRPY","Dialectical behavior therapy","Treatment approach","Services",0.5384,11678
+2018,"TREATDUALMHSA","Integrated mental health and substance use treatment","Treatment approach","Services",0.5492,11678
+2018,"TREATACTVTYTHRPY","Activity therapy","Treatment approach","Services",0.4404,11678
+2018,"TREATELECTRO","Electroconvulsive therapy","Treatment approach","Services",0.0451,11678
+2018,"TREATTELEMEDINCE","Telemedicine/telehealth therapy","Treatment approach","Services",0.3274,11678
+2018,"ASSERTCOMM","Assertive Community Treatment (ACT)","Services and practices","Services",0.1344,11678
+2018,"MHINTCASEMGMT","Intensive Case Management (ICM)","Services and practices","Services",0.2351,11678
+2018,"MHCASEMGMT","Case Management (CM)","Services and practices","Services",0.6689,11678
+2018,"MHCOURTORDERED","Court-ordered treatment","Services and practices","Services",0.4557,11678
+2018,"MHCHRONIC","Chronic Disease/illness Management (CDM)","Services and practices","Services",0.188,11678
+2018,"ILLNESSMGMT","Illness Management and Recovery (IMR)","Services and practices","Services",0.2729,11678
+2018,"PRIMARYCARE","Integrated primary care services","Services and practices","Services",0.2526,11678
+2018,"DIETEXERCOUNSEL","Diet and exercise counseling","Services and practices","Services",0.3064,11678
+2018,"FAMPSYCHED","Family psychoeducation","Services and practices","Services",0.6429,11678
+2018,"MHEDUCATION","Education services","Services and practices","Services",0.3069,11678
+2018,"MHHOUSING","Housing services","Services and practices","Services",0.2053,11678
+2018,"SUPPHOUSING","Supported housing","Services and practices","Services",0.1531,11678
+2018,"MHPSYCHREHAB","Psychosocial rehabilitation services","Services and practices","Services",0.4116,11678
+2018,"MHVOCREHAB","Vocational rehabilitation services","Services and practices","Services",0.1576,11678
+2018,"SUPPEMPLOY","Supported employment","Services and practices","Services",0.1735,11678
+2018,"FOSTERCARE","Therapeutic foster care","Services and practices","Services",0.0465,11678
+2018,"MHLEGAL","Legal advocacy","Services and practices","Services",0.0521,11678
+2018,"MHEMGCY","Psychiatric emergency walk-in services","Services and practices","Services",0.3141,11678
+2018,"MHSUICIDE","Suicide prevention services","Services and practices","Services",0.5909,11678
+2018,"MHCONSUMER","Peer support services","Services and practices","Services",0.2548,11678
+2018,"MHTOBACCOUSE","Screening for tobacco use","Services and practices","Services",0.5286,11678
+2018,"MHTOBACCOCESS","Smoking/vaping/tobacco cessation counseling","Services and practices","Services",0.4055,11678
+2018,"MHNICOTINEREP","Nicotine replacement therapy","Services and practices","Services",0.2666,11678
+2018,"SMOKINGCESSATION","Non-nicotine smoking/tobacco cessation medications","Services and practices","Services",0.2412,11678
+2018,"CRISISTEAM2","Crisis intervention treatment team offered by facility","Services and practices","Services",0.4879,11665
+2018,"SED","Program for children with Serious Emotional Disturbance (SED)","Special programs","Services",0.3429,11679
+2018,"TAYOUNGADULTS","Program for young adults","Special programs","Services",0.1903,11679
+2018,"SPMI","Program for serious mental illness (SMI)","Special programs","Services",0.4724,11679
+2018,"ALZHDEMENTIA","Program for Alzheimer or dementia","Special programs","Services",0.0656,11679
+2018,"SPECGRPEATING","Program for eating disorders","Special programs","Services",0.0825,11679
+2018,"POSTTRAUM","Program for post-traumatic stress disorder (PTSD)","Special programs","Services",0.3638,11679
+2018,"TRAUMATICBRAIN","Program for traumatic brain injury","Special programs","Services",0.0644,11679
+2018,"REVCHK5_MH","Accepts Medicaid","Payment","Settings and payment",0.9026,11455
+2018,"REVCHK8_MH","Accepts Medicare","Payment","Settings and payment",0.7099,11386
+2018,"REVCHK2_MH","Accepts private health insurance","Payment","Settings and payment",0.8249,11440
+2018,"REVCHK1_MH","Accepts cash or self-payment","Payment","Settings and payment",0.8563,11417
+2018,"REVCHK10_MH","Accepts state-financed health insurance","Payment","Settings and payment",0.6773,10154
+2018,"REVCHK15_MH","Accepts federal military insurance","Payment","Settings and payment",0.5614,10354
+2018,"REVCHK17_MH","Accepts Indian Health Service (IHS)/Tribal/Urban (ITU) funds","Payment","Settings and payment",0.1207,7904
+2018,"FEESCALE","Uses sliding fee scale","Payment","Settings and payment",0.5787,11189
+2018,"PAYASST","Offers treatment at no charge or minimal payment","Payment","Settings and payment",0.5238,11177
+2019,"SETTINGIP","24-hour hospital inpatient","Treatment setting","Settings and payment",0.1517,12472
+2019,"SETTINGRC","24-hour residential","Treatment setting","Settings and payment",0.1587,12472
+2019,"SETTINGDTPH","Partial hospitalization/day treatment","Treatment setting","Settings and payment",0.1524,12472
+2019,"SETTINGOP","Outpatient","Treatment setting","Settings and payment",0.783,12472
+2019,"TREATPSYCHOTHRPY","Individual psychotherapy","Treatment approach","Services",0.9162,12471
+2019,"TREATFAMTHRPY","Couples/family therapy","Treatment approach","Services",0.7251,12471
+2019,"TREATGRPTHRPY","Group therapy","Treatment approach","Services",0.8557,12471
+2019,"TREATCOGTHRPY","Cognitive behavioral therapy","Treatment approach","Services",0.9023,12471
+2019,"TREATDIALTHRPY","Dialectical behavior therapy","Treatment approach","Services",0.5633,12471
+2019,"TREATDUALMHSA","Integrated mental health and substance use treatment","Treatment approach","Services",0.566,12471
+2019,"TREATACTVTYTHRPY","Activity therapy","Treatment approach","Services",0.4462,12471
+2019,"TREATELECTRO","Electroconvulsive therapy","Treatment approach","Services",0.0411,12471
+2019,"TREATTELEMEDINCE","Telemedicine/telehealth therapy","Treatment approach","Services",0.3802,12471
+2019,"ASSERTCOMM","Assertive Community Treatment (ACT)","Services and practices","Services",0.1383,12470
+2019,"MHINTCASEMGMT","Intensive Case Management (ICM)","Services and practices","Services",0.2374,12470
+2019,"MHCASEMGMT","Case Management (CM)","Services and practices","Services",0.675,12470
+2019,"MHCOURTORDERED","Court-ordered treatment","Services and practices","Services",0.4793,12470
+2019,"MHCHRONIC","Chronic Disease/illness Management (CDM)","Services and practices","Services",0.1875,12470
+2019,"ILLNESSMGMT","Illness Management and Recovery (IMR)","Services and practices","Services",0.269,12470
+2019,"PRIMARYCARE","Integrated primary care services","Services and practices","Services",0.252,12470
+2019,"DIETEXERCOUNSEL","Diet and exercise counseling","Services and practices","Services",0.3125,12470
+2019,"FAMPSYCHED","Family psychoeducation","Services and practices","Services",0.6779,12470
+2019,"MHEDUCATION","Education services","Services and practices","Services",0.3094,12470
+2019,"MHHOUSING","Housing services","Services and practices","Services",0.206,12470
+2019,"SUPPHOUSING","Supported housing","Services and practices","Services",0.1574,12470
+2019,"MHPSYCHREHAB","Psychosocial rehabilitation services","Services and practices","Services",0.4134,12470
+2019,"MHVOCREHAB","Vocational rehabilitation services","Services and practices","Services",0.1597,12470
+2019,"SUPPEMPLOY","Supported employment","Services and practices","Services",0.182,12470
+2019,"FOSTERCARE","Therapeutic foster care","Services and practices","Services",0.0466,12470
+2019,"MHLEGAL","Legal advocacy","Services and practices","Services",0.0572,12470
+2019,"MHEMGCY","Psychiatric emergency walk-in services","Services and practices","Services",0.3139,12470
+2019,"MHSUICIDE","Suicide prevention services","Services and practices","Services",0.6218,12470
+2019,"MHCONSUMER","Peer support services","Services and practices","Services",0.275,12470
+2019,"MHTOBACCOUSE","Screening for tobacco use","Services and practices","Services",0.5594,12470
+2019,"MHTOBACCOCESS","Smoking/vaping/tobacco cessation counseling","Services and practices","Services",0.4263,12470
+2019,"MHNICOTINEREP","Nicotine replacement therapy","Services and practices","Services",0.2727,12470
+2019,"SMOKINGCESSATION","Non-nicotine smoking/tobacco cessation medications","Services and practices","Services",0.2641,12470
+2019,"CRISISTEAM2","Crisis intervention treatment team offered by facility","Services and practices","Services",0.4854,12446
+2019,"SED","Program for children with Serious Emotional Disturbance (SED)","Special programs","Services",0.3586,12472
+2019,"TAYOUNGADULTS","Program for young adults","Special programs","Services",0.2213,12472
+2019,"SPMI","Program for serious mental illness (SMI)","Special programs","Services",0.4903,12472
+2019,"ALZHDEMENTIA","Program for Alzheimer or dementia","Special programs","Services",0.0694,12472
+2019,"SPECGRPEATING","Program for eating disorders","Special programs","Services",0.099,12472
+2019,"POSTTRAUM","Program for post-traumatic stress disorder (PTSD)","Special programs","Services",0.4192,12472
+2019,"TRAUMATICBRAIN","Program for traumatic brain injury","Special programs","Services",0.0767,12472
+2019,"REVCHK5_MH","Accepts Medicaid","Payment","Settings and payment",0.8787,12444
+2019,"REVCHK8_MH","Accepts Medicare","Payment","Settings and payment",0.6771,12444
+2019,"REVCHK2_MH","Accepts private health insurance","Payment","Settings and payment",0.8039,12444
+2019,"REVCHK1_MH","Accepts cash or self-payment","Payment","Settings and payment",0.8392,12444
+2019,"REVCHK10_MH","Accepts state-financed health insurance","Payment","Settings and payment",0.5829,12444
+2019,"REVCHK15_MH","Accepts federal military insurance","Payment","Settings and payment",0.5002,12444
+2019,"REVCHK17_MH","Accepts Indian Health Service (IHS)/Tribal/Urban (ITU) funds","Payment","Settings and payment",0.0853,12444
+2019,"FEESCALE","Uses sliding fee scale","Payment","Settings and payment",0.5789,11940
+2019,"PAYASST","Offers treatment at no charge or minimal payment","Payment","Settings and payment",0.5161,11923
+2020,"SETTINGIP","24-hour hospital inpatient","Treatment setting","Settings and payment",0.1431,12275
+2020,"SETTINGRC","24-hour residential","Treatment setting","Settings and payment",0.1552,12275
+2020,"SETTINGDTPH","Partial hospitalization/day treatment","Treatment setting","Settings and payment",0.1471,12275
+2020,"SETTINGOP","Outpatient","Treatment setting","Settings and payment",0.7848,12275
+2020,"TREATPSYCHOTHRPY","Individual psychotherapy","Treatment approach","Services",0.9246,12275
+2020,"TREATFAMTHRPY","Couples/family therapy","Treatment approach","Services",0.7407,12275
+2020,"TREATGRPTHRPY","Group therapy","Treatment approach","Services",0.8647,12275
+2020,"TREATCOGTHRPY","Cognitive behavioral therapy","Treatment approach","Services",0.9066,12275
+2020,"TREATDIALTHRPY","Dialectical behavior therapy","Treatment approach","Services",0.5808,12275
+2020,"TREATDUALMHSA","Integrated mental health and substance use treatment","Treatment approach","Services",0.6218,12275
+2020,"TREATACTVTYTHRPY","Activity therapy","Treatment approach","Services",0.4379,12275
+2020,"TREATELECTRO","Electroconvulsive therapy","Treatment approach","Services",0.0406,12275
+2020,"TREATTELEMEDINCE","Telemedicine/telehealth therapy","Treatment approach","Services",0.6872,12275
+2020,"ASSERTCOMM","Assertive Community Treatment (ACT)","Services and practices","Services",0.1463,12232
+2020,"MHINTCASEMGMT","Intensive Case Management (ICM)","Services and practices","Services",0.2441,12232
+2020,"MHCASEMGMT","Case Management (CM)","Services and practices","Services",0.6958,12232
+2020,"MHCOURTORDERED","Court-ordered treatment","Services and practices","Services",0.5344,12232
+2020,"MHCHRONIC","Chronic Disease/illness Management (CDM)","Services and practices","Services",0.1899,12232
+2020,"ILLNESSMGMT","Illness Management and Recovery (IMR)","Services and practices","Services",0.2663,12232
+2020,"PRIMARYCARE","Integrated primary care services","Services and practices","Services",0.2609,12232
+2020,"DIETEXERCOUNSEL","Diet and exercise counseling","Services and practices","Services",0.3308,12232
+2020,"FAMPSYCHED","Family psychoeducation","Services and practices","Services",0.7032,12232
+2020,"MHEDUCATION","Education services","Services and practices","Services",0.3183,12232
+2020,"MHHOUSING","Housing services","Services and practices","Services",0.2145,12232
+2020,"SUPPHOUSING","Supported housing","Services and practices","Services",0.166,12232
+2020,"MHPSYCHREHAB","Psychosocial rehabilitation services","Services and practices","Services",0.419,12232
+2020,"MHVOCREHAB","Vocational rehabilitation services","Services and practices","Services",0.1631,12232
+2020,"SUPPEMPLOY","Supported employment","Services and practices","Services",0.1915,12232
+2020,"FOSTERCARE","Therapeutic foster care","Services and practices","Services",0.0477,12232
+2020,"MHLEGAL","Legal advocacy","Services and practices","Services",0.0625,12232
+2020,"MHEMGCY","Psychiatric emergency walk-in services","Services and practices","Services",0.3218,12232
+2020,"MHSUICIDE","Suicide prevention services","Services and practices","Services",0.6611,12232
+2020,"MHCONSUMER","Peer support services","Services and practices","Services",0.3519,12232
+2020,"MHTOBACCOUSE","Screening for tobacco use","Services and practices","Services",0.6186,12232
+2020,"MHTOBACCOCESS","Smoking/vaping/tobacco cessation counseling","Services and practices","Services",0.4752,12232
+2020,"MHNICOTINEREP","Nicotine replacement therapy","Services and practices","Services",0.304,12232
+2020,"SMOKINGCESSATION","Non-nicotine smoking/tobacco cessation medications","Services and practices","Services",0.2982,12232
+2020,"CRISISTEAM2","Crisis intervention treatment team offered by facility","Services and practices","Services",0.4792,12203
+2020,"SED","Program for children with Serious Emotional Disturbance (SED)","Special programs","Services",0.3788,12229
+2020,"TAYOUNGADULTS","Program for young adults","Special programs","Services",0.2797,12229
+2020,"SPMI","Program for serious mental illness (SMI)","Special programs","Services",0.5108,12229
+2020,"ALZHDEMENTIA","Program for Alzheimer or dementia","Special programs","Services",0.0756,12229
+2020,"SPECGRPEATING","Program for eating disorders","Special programs","Services",0.115,12229
+2020,"POSTTRAUM","Program for post-traumatic stress disorder (PTSD)","Special programs","Services",0.4581,12229
+2020,"TRAUMATICBRAIN","Program for traumatic brain injury","Special programs","Services",0.0915,12229
+2020,"REVCHK5_MH","Accepts Medicaid","Payment","Settings and payment",0.8796,12194
+2020,"REVCHK8_MH","Accepts Medicare","Payment","Settings and payment",0.6812,12194
+2020,"REVCHK2_MH","Accepts private health insurance","Payment","Settings and payment",0.8155,12194
+2020,"REVCHK1_MH","Accepts cash or self-payment","Payment","Settings and payment",0.8471,12194
+2020,"REVCHK10_MH","Accepts state-financed health insurance","Payment","Settings and payment",0.5945,12194
+2020,"REVCHK15_MH","Accepts federal military insurance","Payment","Settings and payment",0.5171,12194
+2020,"REVCHK17_MH","Accepts Indian Health Service (IHS)/Tribal/Urban (ITU) funds","Payment","Settings and payment",0.0946,12194
+2020,"FEESCALE","Uses sliding fee scale","Payment","Settings and payment",0.5939,11631
+2020,"PAYASST","Offers treatment at no charge or minimal payment","Payment","Settings and payment",0.5326,11616
+2021,"SETTINGIP","24-hour hospital inpatient","Treatment setting","Settings and payment",0.1303,10024
+2021,"SETTINGRC","24-hour residential","Treatment setting","Settings and payment",0.1553,10024
+2021,"SETTINGDTPH","Partial hospitalization/day treatment","Treatment setting","Settings and payment",0.1429,10024
+2021,"SETTINGOP","Outpatient","Treatment setting","Settings and payment",0.7931,10023
+2021,"TREATPSYCHOTHRPY","Individual psychotherapy","Treatment approach","Services",0.9227,9968
+2021,"TREATFAMTHRPY","Couples/family therapy","Treatment approach","Services",0.7386,9955
+2021,"TREATGRPTHRPY","Group therapy","Treatment approach","Services",0.8556,9966
+2021,"TREATCOGTHRPY","Cognitive behavioral therapy","Treatment approach","Services",0.9046,9971
+2021,"TREATDIALTHRPY","Dialectical behavior therapy","Treatment approach","Services",0.5929,9954
+2021,"TREATDUALMHSA","Integrated mental health and substance use treatment","Treatment approach","Services",0.6192,9952
+2021,"TREATACTVTYTHRPY","Activity therapy","Treatment approach","Services",0.454,9950
+2021,"TREATELECTRO","Electroconvulsive therapy","Treatment approach","Services",0.0346,9922
+2021,"TREATTELEMEDINCE","Telemedicine/telehealth therapy","Treatment approach","Services",0.7634,9958
+2021,"ASSERTCOMM","Assertive Community Treatment (ACT)","Services and practices","Services",0.1581,9973
+2021,"MHINTCASEMGMT","Intensive Case Management (ICM)","Services and practices","Services",0.2434,9980
+2021,"MHCASEMGMT","Case Management (CM)","Services and practices","Services",0.7106,10008
+2021,"MHCOURTORDERED","Court-ordered treatment","Services and practices","Services",0.5378,9995
+2021,"MHCHRONIC","Chronic Disease/illness Management (CDM)","Services and practices","Services",0.1881,9980
+2021,"ILLNESSMGMT","Illness Management and Recovery (IMR)","Services and practices","Services",0.2531,9972
+2021,"PRIMARYCARE","Integrated primary care services","Services and practices","Services",0.2762,9982
+2021,"DIETEXERCOUNSEL","Diet and exercise counseling","Services and practices","Services",0.3447,9987
+2021,"FAMPSYCHED","Family psychoeducation","Services and practices","Services",0.7058,9996
+2021,"MHEDUCATION","Education services","Services and practices","Services",0.3187,9983
+2021,"MHHOUSING","Housing services","Services and practices","Services",0.234,9978
+2021,"SUPPHOUSING","Supported housing","Services and practices","Services",0.1729,9969
+2021,"MHPSYCHREHAB","Psychosocial rehabilitation services","Services and practices","Services",0.4129,9983
+2021,"MHVOCREHAB","Vocational rehabilitation services","Services and practices","Services",0.1777,9977
+2021,"SUPPEMPLOY","Supported employment","Services and practices","Services",0.2019,9974
+2021,"FOSTERCARE","Therapeutic foster care","Services and practices","Services",0.0461,9968
+2021,"MHLEGAL","Legal advocacy","Services and practices","Services",0.0635,9969
+2021,"MHEMGCY","Psychiatric emergency walk-in services","Services and practices","Services",0.3021,9982
+2021,"MHSUICIDE","Suicide prevention services","Services and practices","Services",0.6885,10024
+2021,"MHCONSUMER","Peer support services","Services and practices","Services",0.4031,9989
+2021,"MHTOBACCOUSE","Screening for tobacco use","Services and practices","Services",0.66,10004
+2021,"MHTOBACCOCESS","Smoking/vaping/tobacco cessation counseling","Services and practices","Services",0.5032,9996
+2021,"MHNICOTINEREP","Nicotine replacement therapy","Services and practices","Services",0.3301,9987
+2021,"SMOKINGCESSATION","Non-nicotine smoking/tobacco cessation medications","Services and practices","Services",0.3176,9981
+2021,"CRISISTEAM2","Crisis intervention treatment team offered by facility","Services and practices","Services",0.4629,9994
+2021,"SED","Program for children with Serious Emotional Disturbance (SED)","Special programs","Services",0.3944,9708
+2021,"TAYOUNGADULTS","Program for young adults","Special programs","Services",0.3296,9713
+2021,"SPMI","Program for serious mental illness (SMI)","Special programs","Services",0.5364,9717
+2021,"ALZHDEMENTIA","Program for Alzheimer or dementia","Special programs","Services",0.0762,9690
+2021,"SPECGRPEATING","Program for eating disorders","Special programs","Services",0.1347,9697
+2021,"POSTTRAUM","Program for post-traumatic stress disorder (PTSD)","Special programs","Services",0.4897,9716
+2021,"TRAUMATICBRAIN","Program for traumatic brain injury","Special programs","Services",0.108,9696
+2021,"REVCHK5_MH","Accepts Medicaid","Payment","Settings and payment",0.8782,10024
+2021,"REVCHK8_MH","Accepts Medicare","Payment","Settings and payment",0.6738,10024
+2021,"REVCHK2_MH","Accepts private health insurance","Payment","Settings and payment",0.8036,10024
+2021,"REVCHK1_MH","Accepts cash or self-payment","Payment","Settings and payment",0.8375,10024
+2021,"REVCHK10_MH","Accepts state-financed health insurance","Payment","Settings and payment",0.579,10024
+2021,"REVCHK15_MH","Accepts federal military insurance","Payment","Settings and payment",0.4868,10024
+2021,"REVCHK17_MH","Accepts Indian Health Service (IHS)/Tribal/Urban (ITU) funds","Payment","Settings and payment",0.0889,10024
+2021,"FEESCALE","Uses sliding fee scale","Payment","Settings and payment",0.6009,9991
+2021,"PAYASST","Offers treatment at no charge or minimal payment","Payment","Settings and payment",0.5419,9973
+2022,"SETTINGIP","24-hour hospital inpatient","Treatment setting","Settings and payment",0.1246,10525
+2022,"SETTINGRC","24-hour residential","Treatment setting","Settings and payment",0.1602,10525
+2022,"SETTINGDTPH","Partial hospitalization/day treatment","Treatment setting","Settings and payment",0.1411,10525
+2022,"SETTINGOP","Outpatient","Treatment setting","Settings and payment",0.7973,10525
+2022,"TREATPSYCHOTHRPY","Individual psychotherapy","Treatment approach","Services",0.9235,10490
+2022,"TREATFAMTHRPY","Couples/family therapy","Treatment approach","Services",0.7326,10481
+2022,"TREATGRPTHRPY","Group therapy","Treatment approach","Services",0.8433,10487
+2022,"TREATCOGTHRPY","Cognitive behavioral therapy","Treatment approach","Services",0.9029,10491
+2022,"TREATDIALTHRPY","Dialectical behavior therapy","Treatment approach","Services",0.6032,10484
+2022,"TREATDUALMHSA","Integrated mental health and substance use treatment","Treatment approach","Services",0.6092,10484
+2022,"TREATACTVTYTHRPY","Activity therapy","Treatment approach","Services",0.4678,10478
+2022,"TREATELECTRO","Electroconvulsive therapy","Treatment approach","Services",0.0297,10468
+2022,"TREATTELEMEDINCE","Telemedicine/telehealth therapy","Treatment approach","Services",0.784,10484
+2022,"ASSERTCOMM","Assertive Community Treatment (ACT)","Services and practices","Services",0.1541,10507
+2022,"MHINTCASEMGMT","Intensive Case Management (ICM)","Services and practices","Services",0.2281,10509
+2022,"MHCASEMGMT","Case Management (CM)","Services and practices","Services",0.7124,10518
+2022,"MHCOURTORDERED","Court-ordered treatment","Services and practices","Services",0.5306,10510
+2022,"MHCHRONIC","Chronic Disease/illness Management (CDM)","Services and practices","Services",0.175,10508
+2022,"ILLNESSMGMT","Illness Management and Recovery (IMR)","Services and practices","Services",0.2283,10506
+2022,"PRIMARYCARE","Integrated primary care services","Services and practices","Services",0.2606,10508
+2022,"DIETEXERCOUNSEL","Diet and exercise counseling","Services and practices","Services",0.3252,10508
+2022,"FAMPSYCHED","Family psychoeducation","Services and practices","Services",0.6816,10519
+2022,"MHEDUCATION","Education services","Services and practices","Services",0.3056,10509
+2022,"MHHOUSING","Housing services","Services and practices","Services",0.2378,10504
+2022,"SUPPHOUSING","Supported housing","Services and practices","Services",0.1699,10505
+2022,"MHPSYCHREHAB","Psychosocial rehabilitation services","Services and practices","Services",0.3974,10509
+2022,"MHVOCREHAB","Vocational rehabilitation services","Services and practices","Services",0.1707,10507
+2022,"SUPPEMPLOY","Supported employment","Services and practices","Services",0.1941,10506
+2022,"FOSTERCARE","Therapeutic foster care","Services and practices","Services",0.0455,10503
+2022,"MHLEGAL","Legal advocacy","Services and practices","Services",0.0598,10504
+2022,"MHEMGCY","Psychiatric emergency walk-in services","Services and practices","Services",0.2728,10511
+2022,"MHSUICIDE","Suicide prevention services","Services and practices","Services",0.6763,10525
+2022,"MHCONSUMER","Peer support services","Services and practices","Services",0.4228,10509
+2022,"MHTOBACCOUSE","Screening for tobacco use","Services and practices","Services",0.6617,10516
+2022,"MHTOBACCOCESS","Smoking/vaping/tobacco cessation counseling","Services and practices","Services",0.5002,10510
+2022,"MHNICOTINEREP","Nicotine replacement therapy","Services and practices","Services",0.3361,10510
+2022,"SMOKINGCESSATION","Non-nicotine smoking/tobacco cessation medications","Services and practices","Services",0.3166,10509
+2022,"CRISISTEAM2","Crisis intervention treatment team offered by facility","Services and practices","Services",0.4461,10502
+2022,"SED","Program for children with Serious Emotional Disturbance (SED)","Special programs","Services",0.3752,10454
+2022,"TAYOUNGADULTS","Program for young adults","Special programs","Services",0.3327,10454
+2022,"SPMI","Program for serious mental illness (SMI)","Special programs","Services",0.5052,10458
+2022,"ALZHDEMENTIA","Program for Alzheimer or dementia","Special programs","Services",0.0759,10453
+2022,"SPECGRPEATING","Program for eating disorders","Special programs","Services",0.1427,10453
+2022,"POSTTRAUM","Program for post-traumatic stress disorder (PTSD)","Special programs","Services",0.4715,10459
+2022,"TRAUMATICBRAIN","Program for traumatic brain injury","Special programs","Services",0.1086,10452
+2022,"REVCHK5_MH","Accepts Medicaid","Payment","Settings and payment",0.8758,10525
+2022,"REVCHK8_MH","Accepts Medicare","Payment","Settings and payment",0.666,10525
+2022,"REVCHK2_MH","Accepts private health insurance","Payment","Settings and payment",0.8065,10525
+2022,"REVCHK1_MH","Accepts cash or self-payment","Payment","Settings and payment",0.8311,10525
+2022,"REVCHK10_MH","Accepts state-financed health insurance","Payment","Settings and payment",0.55,10525
+2022,"REVCHK15_MH","Accepts federal military insurance","Payment","Settings and payment",0.454,10525
+2022,"REVCHK17_MH","Accepts Indian Health Service (IHS)/Tribal/Urban (ITU) funds","Payment","Settings and payment",0.0826,10525
+2022,"FEESCALE","Uses sliding fee scale","Payment","Settings and payment",0.5979,10500
+2022,"PAYASST","Offers treatment at no charge or minimal payment","Payment","Settings and payment",0.5276,10482
+2023,"SETTINGIP","24-hour hospital inpatient","Treatment setting","Settings and payment",0.1179,10141
+2023,"SETTINGRC","24-hour residential","Treatment setting","Settings and payment",0.1563,10141
+2023,"SETTINGDTPH","Partial hospitalization/day treatment","Treatment setting","Settings and payment",0.1441,10141
+2023,"SETTINGOP","Outpatient","Treatment setting","Settings and payment",0.8121,10141
+2023,"TREATPSYCHOTHRPY","Individual psychotherapy","Treatment approach","Services",0.9297,10092
+2023,"TREATFAMTHRPY","Couples/family therapy","Treatment approach","Services",0.7426,10089
+2023,"TREATGRPTHRPY","Group therapy","Treatment approach","Services",0.844,10091
+2023,"TREATCOGTHRPY","Cognitive behavioral therapy","Treatment approach","Services",0.9096,10092
+2023,"TREATDIALTHRPY","Dialectical behavior therapy","Treatment approach","Services",0.6358,10082
+2023,"TREATDUALMHSA","Integrated mental health and substance use treatment","Treatment approach","Services",0.6446,10086
+2023,"TREATACTVTYTHRPY","Activity therapy","Treatment approach","Services",0.4771,10086
+2023,"TREATELECTRO","Electroconvulsive therapy","Treatment approach","Services",0.0279,10074
+2023,"TREATTELEMEDINCE","Telemedicine/telehealth therapy","Treatment approach","Services",0.8019,10085
+2023,"ASSERTCOMM","Assertive Community Treatment (ACT)","Services and practices","Services",0.1638,10125
+2023,"MHINTCASEMGMT","Intensive Case Management (ICM)","Services and practices","Services",0.2371,10124
+2023,"MHCASEMGMT","Case Management (CM)","Services and practices","Services",0.7292,10135
+2023,"MHCOURTORDERED","Court-ordered treatment","Services and practices","Services",0.5647,10129
+2023,"MHCHRONIC","Chronic Disease/illness Management (CDM)","Services and practices","Services",0.1735,10121
+2023,"ILLNESSMGMT","Illness Management and Recovery (IMR)","Services and practices","Services",0.2298,10123
+2023,"PRIMARYCARE","Integrated primary care services","Services and practices","Services",0.2742,10125
+2023,"DIETEXERCOUNSEL","Diet and exercise counseling","Services and practices","Services",0.3286,10126
+2023,"FAMPSYCHED","Family psychoeducation","Services and practices","Services",0.6899,10131
+2023,"MHEDUCATION","Education services","Services and practices","Services",0.3139,10125
+2023,"MHHOUSING","Housing services","Services and practices","Services",0.2425,10125
+2023,"SUPPHOUSING","Supported housing","Services and practices","Services",0.1741,10123
+2023,"MHPSYCHREHAB","Psychosocial rehabilitation services","Services and practices","Services",0.3987,10124
+2023,"MHVOCREHAB","Vocational rehabilitation services","Services and practices","Services",0.1695,10122
+2023,"SUPPEMPLOY","Supported employment","Services and practices","Services",0.1948,10123
+2023,"FOSTERCARE","Therapeutic foster care","Services and practices","Services",0.0433,10122
+2023,"MHLEGAL","Legal advocacy","Services and practices","Services",0.0655,10121
+2023,"MHEMGCY","Psychiatric emergency walk-in services","Services and practices","Services",0.2773,10121
+2023,"MHSUICIDE","Suicide prevention services","Services and practices","Services",0.6982,10141
+2023,"MHCONSUMER","Peer support services","Services and practices","Services",0.4597,10129
+2023,"MHTOBACCOUSE","Screening for tobacco use","Services and practices","Services",0.6857,10134
+2023,"MHTOBACCOCESS","Smoking/vaping/tobacco cessation counseling","Services and practices","Services",0.5264,10130
+2023,"MHNICOTINEREP","Nicotine replacement therapy","Services and practices","Services",0.3465,10122
+2023,"SMOKINGCESSATION","Non-nicotine smoking/tobacco cessation medications","Services and practices","Services",0.3334,10121
+2023,"CRISISTEAM2","Crisis intervention treatment team offered by facility","Services and practices","Services",0.4587,10125
+2023,"SED","Program for children with Serious Emotional Disturbance (SED)","Special programs","Services",0.3794,10109
+2023,"TAYOUNGADULTS","Program for young adults","Special programs","Services",0.3613,10106
+2023,"SPMI","Program for serious mental illness (SMI)","Special programs","Services",0.5264,10105
+2023,"ALZHDEMENTIA","Program for Alzheimer or dementia","Special programs","Services",0.0833,10104
+2023,"SPECGRPEATING","Program for eating disorders","Special programs","Services",0.1588,10107
+2023,"POSTTRAUM","Program for post-traumatic stress disorder (PTSD)","Special programs","Services",0.5007,10111
+2023,"TRAUMATICBRAIN","Program for traumatic brain injury","Special programs","Services",0.1128,10104
+2023,"REVCHK5_MH","Accepts Medicaid","Payment","Settings and payment",0.8694,10140
+2023,"REVCHK8_MH","Accepts Medicare","Payment","Settings and payment",0.6724,10140
+2023,"REVCHK2_MH","Accepts private health insurance","Payment","Settings and payment",0.829,10140
+2023,"REVCHK1_MH","Accepts cash or self-payment","Payment","Settings and payment",0.8526,10141
+2023,"REVCHK10_MH","Accepts state-financed health insurance","Payment","Settings and payment",0.5644,10140
+2023,"REVCHK15_MH","Accepts federal military insurance","Payment","Settings and payment",0.4836,10140
+2023,"REVCHK17_MH","Accepts Indian Health Service (IHS)/Tribal/Urban (ITU) funds","Payment","Settings and payment",0.0906,10140
+2023,"FEESCALE","Uses sliding fee scale","Payment","Settings and payment",0.6178,10118
+2023,"PAYASST","Offers treatment at no charge or minimal payment","Payment","Settings and payment",0.5303,10116
+2024,"SETTINGIP","24-hour hospital inpatient","Treatment setting","Settings and payment",0.0903,14291
+2024,"SETTINGRC","24-hour residential","Treatment setting","Settings and payment",0.1693,14291
+2024,"SETTINGDTPH","Partial hospitalization/day treatment","Treatment setting","Settings and payment",0.1557,14291
+2024,"SETTINGOP","Outpatient","Treatment setting","Settings and payment",0.8249,14291
+2024,"TREATPSYCHOTHRPY","Individual psychotherapy","Treatment approach","Services",0.9223,14226
+2024,"TREATFAMTHRPY","Couples/family therapy","Treatment approach","Services",0.722,14218
+2024,"TREATGRPTHRPY","Group therapy","Treatment approach","Services",0.8416,14227
+2024,"TREATCOGTHRPY","Cognitive behavioral therapy","Treatment approach","Services",0.9096,14230
+2024,"TREATDIALTHRPY","Dialectical behavior therapy","Treatment approach","Services",0.6378,14223
+2024,"TREATDUALMHSA","Integrated mental health and substance use treatment","Treatment approach","Services",0.702,14224
+2024,"TREATACTVTYTHRPY","Activity therapy","Treatment approach","Services",0.4857,14224
+2024,"TREATELECTRO","Electroconvulsive therapy","Treatment approach","Services",0.021,14214
+2024,"TREATTELEMEDINCE","Telemedicine/telehealth therapy","Treatment approach","Services",0.7987,14224
+2024,"ASSERTCOMM","Assertive Community Treatment (ACT)","Services and practices","Services",0.1596,14276
+2024,"MHINTCASEMGMT","Intensive Case Management (ICM)","Services and practices","Services",0.2256,14277
+2024,"MHCASEMGMT","Case Management (CM)","Services and practices","Services",0.7491,14282
+2024,"MHCOURTORDERED","Court-ordered treatment","Services and practices","Services",0.5962,14284
+2024,"MHCHRONIC","Chronic Disease/illness Management (CDM)","Services and practices","Services",0.1623,14276
+2024,"ILLNESSMGMT","Illness Management and Recovery (IMR)","Services and practices","Services",0.201,14277
+2024,"PRIMARYCARE","Integrated primary care services","Services and practices","Services",0.2754,14276
+2024,"DIETEXERCOUNSEL","Diet and exercise counseling","Services and practices","Services",0.3184,14279
+2024,"FAMPSYCHED","Family psychoeducation","Services and practices","Services",0.6553,14280
+2024,"MHEDUCATION","Education services","Services and practices","Services",0.3346,14278
+2024,"MHHOUSING","Housing services","Services and practices","Services",0.2481,14277
+2024,"SUPPHOUSING","Supported housing","Services and practices","Services",0.1776,14277
+2024,"MHPSYCHREHAB","Psychosocial rehabilitation services","Services and practices","Services",0.3603,14280
+2024,"MHVOCREHAB","Vocational rehabilitation services","Services and practices","Services",0.1715,14277
+2024,"SUPPEMPLOY","Supported employment","Services and practices","Services",0.1805,14276
+2024,"FOSTERCARE","Therapeutic foster care","Services and practices","Services",0.038,14275
+2024,"MHLEGAL","Legal advocacy","Services and practices","Services",0.0661,14277
+2024,"MHEMGCY","Psychiatric emergency walk-in services","Services and practices","Services",0.2329,14277
+2024,"MHSUICIDE","Suicide prevention services","Services and practices","Services",0.6843,14291
+2024,"MHCONSUMER","Peer support services","Services and practices","Services",0.5104,14284
+2024,"MHTOBACCOUSE","Screening for tobacco use","Services and practices","Services",0.705,14283
+2024,"MHTOBACCOCESS","Smoking/vaping/tobacco cessation counseling","Services and practices","Services",0.5648,14282
+2024,"MHNICOTINEREP","Nicotine replacement therapy","Services and practices","Services",0.3754,14280
+2024,"SMOKINGCESSATION","Non-nicotine smoking/tobacco cessation medications","Services and practices","Services",0.3607,14279
+2024,"CRISISTEAM2","Crisis intervention treatment team offered by facility","Services and practices","Services",0.4112,14267
+2024,"SED","Program for children with Serious Emotional Disturbance (SED)","Special programs","Services",0.3183,14256
+2024,"TAYOUNGADULTS","Program for young adults","Special programs","Services",0.3625,14256
+2024,"SPMI","Program for serious mental illness (SMI)","Special programs","Services",0.4796,14259
+2024,"ALZHDEMENTIA","Program for Alzheimer or dementia","Special programs","Services",0.0735,14252
+2024,"SPECGRPEATING","Program for eating disorders","Special programs","Services",0.1714,14257
+2024,"POSTTRAUM","Program for post-traumatic stress disorder (PTSD)","Special programs","Services",0.5175,14260
+2024,"TRAUMATICBRAIN","Program for traumatic brain injury","Special programs","Services",0.1274,14254
+2024,"REVCHK5_MH","Accepts Medicaid","Payment","Settings and payment",0.844,14291
+2024,"REVCHK8_MH","Accepts Medicare","Payment","Settings and payment",0.6342,14291
+2024,"REVCHK2_MH","Accepts private health insurance","Payment","Settings and payment",0.8312,14291
+2024,"REVCHK1_MH","Accepts cash or self-payment","Payment","Settings and payment",0.8599,14291
+2024,"REVCHK10_MH","Accepts state-financed health insurance","Payment","Settings and payment",0.5328,14291
+2024,"REVCHK15_MH","Accepts federal military insurance","Payment","Settings and payment",0.444,14291
+2024,"REVCHK17_MH","Accepts Indian Health Service (IHS)/Tribal/Urban (ITU) funds","Payment","Settings and payment",0.1073,14291
+2024,"FEESCALE","Uses sliding fee scale","Payment","Settings and payment",0.6227,14261
+2024,"PAYASST","Offers treatment at no charge or minimal payment","Payment","Settings and payment",0.5092,14264
