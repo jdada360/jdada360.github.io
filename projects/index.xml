@@ -519,7 +519,7 @@ font-style: inherit;">caption</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"Source: Dada J. Trends in the Services Offered by US Mental Health Treatment Facilities, 2015–2024. October 21, 2026. doi:10.5281/zenodo.23550528. Data from SAMHSA N-MHSS (2015–2020) and N-SUMHSS (2021–2024)."</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">"Source: Dada J. Trends in the Services Offered by US Mental Health Treatment Facilities, 2015–2024. October 21, 2026. doi:10.5281/zenodo.23574161. Data from SAMHSA N-MHSS (2015–2020) and N-SUMHSS (2021–2024)."</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
 <span id="cb1-47">  <span class="dt" style="color: #AD0000;
@@ -3047,7 +3047,7 @@ font-style: inherit;">false</span></span>
 <li><a href="trends.csv">trends.csv</a>: one row per item and year, with the item name, group, share of facilities offering it, and the number of facilities that answered.</li>
 <li><a href="sample.csv">sample.csv</a>: the number of facilities in the sample each year.</li>
 </ul>
-<p>Please cite this page if you use the data. The data and code are archived on Zenodo: <a href="https://doi.org/10.5281/zenodo.23550528">doi:10.5281/zenodo.23550528</a>.</p>
+<p>Please cite this page if you use the data. The code, codebook and data are on GitHub at <a href="https://github.com/jdada360/mh-facility-trends">jdada360/mh-facility-trends</a> and archived on Zenodo: <a href="https://doi.org/10.5281/zenodo.23574161">doi:10.5281/zenodo.23574161</a>.</p>
 </section>
 <section id="sources" class="level3">
 <h3 class="anchored" data-anchor-id="sources">Sources</h3>
@@ -3263,7 +3263,7 @@ body.quarto-dark .mh-chart g[aria-label="tip"] { fill: #1F1A52; }
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-dada2026" class="csl-entry quarto-appendix-citeas">
 <div class="">Dada
 J. Trends in the Services Offered by US Mental Health Treatment
-Facilities, 2015–2024. October 21, 2026. doi:<a href="https://doi.org/10.5281/zenodo.23550528">10.5281/zenodo.23550528</a></div>
+Facilities, 2015–2024. October 21, 2026. doi:<a href="https://doi.org/10.5281/zenodo.23574161">10.5281/zenodo.23574161</a></div>
 </div></div></section></div> ]]></description>
   <category>N-SUMHSS</category>
   <category>behavioral health</category>
