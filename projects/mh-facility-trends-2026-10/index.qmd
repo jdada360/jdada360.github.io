@@ -1,0 +1,288 @@
+---
+title: "Trends in the Services Offered by US Mental Health Treatment Facilities, 2015–2024"
+description: "An interactive look at the share of U.S. mental health treatment facilities offering suicide prevention, eating disorder programs, telehealth, peer support, and 50-plus other services and payment options, from N-MHSS and N-SUMHSS."
+date: 2026-10-21
+author: Joy Dada
+categories: [N-SUMHSS, behavioral health, data tool]
+image: thumbnail.png
+csl: american-medical-association.csl
+citation:
+  type: webpage
+  url: https://jdada360.github.io/projects/mh-facility-trends-2026-10/
+---
+
+Every year, SAMHSA asks every known mental health treatment facility in the U.S. which services it offers and which payments it accepts. The answers are public, but over the years the survey changed its name, its file format, and some of its variable names. I combined ten years of files, 2015 through 2024, into one series. The charts below let you see which services became more or less common without cleaning the survey files yourself. Use the Years toggle above the charts to view all years together, only the N-MHSS years (2015–2020), or only the N-SUMHSS years (2021–2024).
+
+```{ojs}
+//| echo: false
+trends = FileAttachment("trends.csv").csv({ typed: true })
+
+optionsFor = chart => Array.from(
+  d3.group(trends.filter(d => d.chart === chart), d => d.variable),
+  ([variable, rows]) => ({ variable, label: rows[0].label, group: rows[0].group })
+).sort((a, b) => d3.ascending(a.group, b.group) || d3.ascending(a.label, b.label))
+
+// Y axis fits the data: at least a 20-point window, padded and snapped to
+// the gridline step, clamped to 0-100%. Lines do not need a zero baseline the way
+// bars do, and the fixed minimum window keeps small changes from looking huge.
+yAxis = (series) => {
+  const lo = d3.min(series, d => d.share), hi = d3.max(series, d => d.share);
+  const span = Math.max(hi - lo, 0.2), mid = (lo + hi) / 2, pad = span * 0.15;
+  let a = mid - span / 2 - pad, b = mid + span / 2 + pad;
+  if (a < 0) { b -= a; a = 0; }
+  if (b > 1) { a -= b - 1; b = 1; }
+  // Gridline step grows with the range so there are about 4-6 lines:
+  // 5 points for narrow ranges, up to 25 points for wide ones.
+  const step = [0.05, 0.1, 0.2, 0.25].find(k => (b - a) / k <= 6) ?? 0.25;
+  const domain = [Math.max(0, Math.floor(a / step) * step), Math.min(1, Math.ceil(b / step) * step)];
+  return { domain, ticks: d3.range(domain[0], domain[1] + 1e-9, step) };
+}
+
+trendPlot = (series) => Plot.plot({
+  className: "mh-chart",
+  title: series[0].label,
+  subtitle: `Share of U.S. mental health treatment facilities, ${series[0].year}–${series.at(-1).year}`,
+  caption: "Source: Dada J. Trends in the Services Offered by US Mental Health Treatment Facilities, 2015–2024. October 21, 2026. https://jdada360.github.io/projects/mh-facility-trends-2026-10/. Data from SAMHSA N-MHSS (2015–2020) and N-SUMHSS (2021–2024).",
+  width: Math.min(width, 860),
+  height: 420,
+  marginLeft: 56,
+  marginTop: 28,
+  style: { fontSize: "16px", fontFamily: "Figtree, system-ui, sans-serif", background: "transparent" },
+  x: { label: null, tickFormat: d3.format("d"), ticks: series.map(d => d.year) },
+  y: { label: null, ...yAxis(series), tickFormat: d3.format(".0%"), grid: true },
+  marks: [
+    Plot.lineY(series, { x: "year", y: "share", stroke: "#B51D5A", strokeWidth: 3 }),
+    Plot.dot(series, { x: "year", y: "share", fill: "#B51D5A", r: 5 }),
+    Plot.text(series.slice(0, 1),
+      { x: "year", y: "share", text: d => d3.format(".0%")(d.share), dy: series[1].share > series[0].share ? 22 : -16, dx: 8, textAnchor: "start", fill: "#B51D5A", fontWeight: 600, fontSize: 17 }),
+    Plot.text(series.slice(-1),
+      { x: "year", y: "share", text: d => d3.format(".0%")(d.share), dy: series.at(-2).share > series.at(-1).share ? 22 : -16, textAnchor: "end", fill: "#B51D5A", fontWeight: 600, fontSize: 17 }),
+    Plot.tip(series, Plot.pointerX({ x: "year", y: "share",
+      title: d => `${d.year}\n${d3.format(".1%")(d.share)} of ${d3.format(",")(d.n_facilities)} facilities that answered` }))
+  ]
+})
+```
+
+::: {.column-page .mh-explorer}
+
+```{ojs}
+//| echo: false
+ranges = new Map([["All years, 2015–2024", [2015, 2024]], ["N-MHSS only, 2015–2020", [2015, 2020]], ["N-SUMHSS only, 2021–2024", [2021, 2024]]])
+// Selections are kept in the address (?years=2021-2024&service=MHSUICIDE&payment=REVCHK5_MH)
+// so a link opens the same view.
+params = new URLSearchParams(location.search)
+viewof range = Inputs.radio(ranges, {
+  label: "Years",
+  value: [...ranges.values()].find(r => r.join("-") === params.get("years")) ?? ranges.get("All years, 2015–2024")
+})
+inRange = d => d.year >= range[0] && d.year <= range[1]
+```
+
+### Services
+
+```{ojs}
+//| echo: false
+svcOptions = optionsFor("Services")
+viewof svc = Inputs.select(svcOptions, {
+  label: "Service",
+  format: d => `${d.group}: ${d.label}`,
+  width: Math.min(width, 640),
+  value: svcOptions.find(d => d.variable === params.get("service")) ?? svcOptions.find(d => d.variable === "MHSUICIDE")
+})
+svcSeries = trends.filter(d => d.variable === svc.variable && inRange(d))
+```
+
+```{ojs}
+//| echo: false
+trendPlot(svcSeries)
+```
+
+### Settings and payment
+
+```{ojs}
+//| echo: false
+payOptions = optionsFor("Settings and payment")
+viewof pay = Inputs.select(payOptions, {
+  label: "Item",
+  format: d => `${d.group}: ${d.label}`,
+  width: Math.min(width, 640),
+  value: payOptions.find(d => d.variable === params.get("payment")) ?? payOptions.find(d => d.variable === "REVCHK5_MH")
+})
+paySeries = trends.filter(d => d.variable === pay.variable && inRange(d))
+```
+
+```{ojs}
+//| echo: false
+trendPlot(paySeries)
+```
+
+```{ojs}
+//| echo: false
+{
+  const p = new URLSearchParams(location.search);
+  p.set("years", range.join("-"));
+  p.set("service", svc.variable);
+  p.set("payment", pay.variable);
+  history.replaceState(null, "", `${location.pathname}?${p}${location.hash}`);
+  return html`<p class="mh-share">To share this view, copy the page address. It keeps the years and items you picked.</p>`;
+}
+```
+
+:::
+
+## What stands out
+
+::: {.column-page .mh-wide}
+
+```{ojs}
+//| echo: false
+changes = Array.from(d3.group(trends, d => d.variable), ([variable, rows]) => {
+  const a = rows.find(d => d.year === range[0]), b = rows.find(d => d.year === range[1]);
+  return { label: a.label, s17: a.share, s24: b.share, pp: (b.share - a.share) * 100 };
+}).sort((a, b) => d3.descending(Math.abs(a.pp), Math.abs(b.pp))).slice(0, 10)
+
+Plot.plot({
+  className: "mh-chart",
+  width: Math.min(width, 860),
+  height: 480,
+  // Fit the left margin to the longest label so no label is cut off.
+  marginLeft: Math.min(width * 0.6, 16 + d3.max(changes, d => {
+    const ctx = document.createElement("canvas").getContext("2d");
+    ctx.font = "16px Figtree, system-ui, sans-serif";
+    return ctx.measureText(d.label).width;
+  })),
+  marginRight: 56,
+  style: { fontSize: "16px", fontFamily: "Figtree, system-ui, sans-serif", background: "transparent" },
+  x: { label: "Share of facilities", labelAnchor: "center", labelOffset: 46, domain: [0, 1], tickFormat: d3.format(".0%"), grid: true },
+  marginBottom: 60,
+  y: { label: null, domain: changes.map(d => d.label) },
+  marks: [
+    Plot.link(changes, { x1: "s17", x2: "s24", y1: "label", y2: "label", stroke: "#A8A2CF", strokeWidth: 3 }),
+    Plot.dot(changes, { x: "s17", y: "label", fill: "#343A8F", r: 7 }),
+    Plot.dot(changes, { x: "s24", y: "label", fill: "#B51D5A", r: 7 }),
+    Plot.text(changes, { x: d => Math.max(d.s17, d.s24), y: "label", dx: 12, textAnchor: "start",
+      text: d => d3.format("+.0f")(d.pp) + " pts", fill: "#B51D5A", fontWeight: 600 }),
+    Plot.tip(changes, Plot.pointerY({ x: "s24", y: "label",
+      title: d => `${d.label}\n${range[0]}: ${d3.format(".0%")(d.s17)}\n${range[1]}: ${d3.format(".0%")(d.s24)}` }))
+  ]
+})
+```
+
+
+:::
+
+```{ojs}
+//| echo: false
+md`*The ten items that changed most between ${range[0]} and ${range[1]}, in percentage points. The pink dot is ${range[1]} and the purple dot is ${range[0]}. Use the Years toggle above to change the range.*`
+```
+
+## All items
+
+::: {.column-page .mh-wide .mh-items}
+
+```{ojs}
+//| echo: false
+allItems = Array.from(d3.group(trends.filter(inRange), d => d.variable), ([variable, rows]) => {
+  const a = rows.find(d => d.year === range[0]), b = rows.find(d => d.year === range[1]);
+  return { label: a.label, group: a.group, first: a.share, last: b.share, change: (b.share - a.share) * 100 };
+})
+viewof itemSearch = Inputs.search(allItems, { placeholder: "Search items, e.g. suicide, Medicaid, peer" })
+Inputs.table(itemSearch, {
+  columns: ["label", "first", "last", "change"],
+  header: { label: "Item", first: `${range[0]}`, last: `${range[1]}`, change: "Change (pts)" },
+  format: { first: d3.format(".0%"), last: d3.format(".0%"), change: d3.format("+.0f") },
+  align: { first: "right", last: "right", change: "right" },
+  width: { label: 420, first: 80, last: 80, change: 110 }, layout: "fixed",
+  sort: "change", reverse: true, rows: 15, select: false
+})
+```
+
+*Every item in the data, for the years selected above. Click a column header to sort.*
+
+:::
+
+## Intended use
+
+This is a tool for people who want to explore how the availability of mental health services has changed over time. I haven't drawn conclusions from it here, so please draw your own. You can use it as a starting point for research questions about where and how mental health services are offered. Each chart carries its own title and source line, so you can screenshot it and use it as is.
+
+## Data and methods
+
+### Download the data
+
+- [trends.csv](trends.csv): one row per item and year, with the item name, group, share of facilities offering it, and the number of facilities that answered.
+- [sample.csv](sample.csv): the number of facilities in the sample each year.
+
+Please cite this page if you use the data.
+
+### Sources
+
+The 2015 to 2020 data come from the National Mental Health Services Survey (N-MHSS). In 2021, SAMHSA merged N-MHSS with the National Survey of Substance Abuse Treatment Services (N-SSATS) into one survey, the National Substance Use and Mental Health Services Survey (N-SUMHSS). I use the public-use files for every year, all from SAMHSA:
+
+- N-MHSS: [2015](https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-mhss-2015), [2016](https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-mhss-2016), [2017](https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-mhss-2017), [2018](https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-mhss-2018), [2019](https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-mhss-2019), [2020](https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-mhss-2020)
+- N-SUMHSS: [2021](https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/2021), [2022](https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/2022), [2023](https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/2023), [2024](https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/2024)
+
+The series starts in 2015 because of a change in question format. The 2014 survey asked about each service as its own yes-or-no question. From 2015 on, the survey lists the services and asks facilities to mark all that apply. The two formats give quite different answers for the same item: 66% of facilities reported suicide prevention services in 2014, against 48% in 2015 and 54% in 2016. I left 2014 out so that every year in the charts uses the same format.
+
+### Which facilities count
+
+For 2015 to 2020, I include every facility in the N-MHSS file. For 2021 to 2024, I include the facilities that completed the mental health section of N-SUMHSS, since these items are blank for facilities that only treat substance use. That is the closest match to the old N-MHSS group, though the two groups differ somewhat. Keep this switch in mind when comparing 2020 with 2021. In 2024 the mental health section grew to about 14,300 facilities, up from about 10,100 in 2023, so the 2024 point reflects a larger group with more outpatient providers.
+
+The table shows how many facilities are in the sample each year. The total counts facility-years: most facilities answer in several years, so it is not a count of distinct facilities.
+
+```{ojs}
+//| echo: false
+sample = FileAttachment("sample.csv").csv({ typed: true })
+html`<table class="table mh-sample">
+  <caption>Facilities in the sample by year, 2015–2024</caption>
+  <thead><tr><th>Year</th><th>Survey</th><th class="num">Facilities</th></tr></thead>
+  <tbody>${sample.map(d => html`<tr><td>${d.year}</td><td>${d.year >= 2021 ? "N-SUMHSS" : "N-MHSS"}</td><td class="num">${d3.format(",")(d.facilities)}</td></tr>`)}</tbody>
+  <tfoot><tr><th>Total</th><th></th><th class="num">${d3.format(",")(d3.sum(sample, d => d.facilities))}</th></tr></tfoot>
+</table>`
+```
+
+### Missing answers
+
+Each share counts only the facilities that answered that question in that year. The numerator is facilities answering "yes" and the denominator is facilities answering "yes" or "no." If a facility skipped a question, left it blank, or has a missing code (−1 or −2), I drop it from that item's share for that year. It still counts toward every other item it answered, so denominators differ across items and years. Hover over any point to see how many facilities answered.
+
+### Matching items across years
+
+I kept only items asked in all ten years with the same yes/no coding: 54 in total. Most kept the same variable name throughout. I left out items first asked after 2015, such as transcranial magnetic stimulation, ketamine, and EMDR, because they don't have a full series. The substance use side of the survey isn't covered here either.
+
+### Caveats
+
+Service offerings are self-reported by facility staff. Response rates differ by year (see each year’s codebook).
+
+### Use of AI
+
+I built this page with Claude Opus 5.5, an AI model made by Anthropic. Claude matched variables across the survey years, wrote the code that cleans the data and draws the charts, and drafted the text. I chose the questions, checked the results against the survey files, and edited the writing.
+
+<style>
+.mh-explorer { margin: 2.5rem 0 3rem; padding: 1.5rem 0; border-top: 1px solid rgba(43, 42, 112, .15); border-bottom: 1px solid rgba(43, 42, 112, .15); }
+.mh-explorer > * { max-width: 860px; margin-left: auto; margin-right: auto; }
+.mh-wide { margin: 1rem 0 1.5rem; }
+.mh-items table, .mh-items input { font-family: Figtree, system-ui, sans-serif; font-size: .95rem; }
+.mh-items form, .mh-items [class^="oi-"], .mh-items [class*=" oi-"] { max-width: none !important; width: 100%; }
+.mh-share { font-family: Figtree, system-ui, sans-serif; font-size: .9rem; opacity: .75; margin-top: 1rem; }
+.mh-sample { margin-left: auto; margin-right: auto; caption-side: top; }
+.mh-sample caption { text-align: center; font-weight: 600; font-size: 1.05rem; color: inherit; padding-bottom: .6rem; }
+.mh-sample { max-width: 28rem; font-family: Figtree, system-ui, sans-serif; font-size: .95rem; }
+.mh-sample .num { text-align: right; font-variant-numeric: tabular-nums; }
+.mh-sample tfoot th { border-top: 2px solid currentColor; }
+.mh-wide > * { max-width: 860px; margin-left: auto; margin-right: auto; }
+.mh-explorer h3 { margin-top: 1.5rem; }
+.mh-chart-figure h2 { font-size: 1.35rem; margin: 1.25rem 0 .2rem; padding: 0; border: none !important; font-weight: 600; }
+.mh-chart-figure h3 { font-size: 1rem; font-weight: 400; opacity: .75; margin: 0 0 .5rem; }
+.mh-chart-figure figcaption { font-size: .85rem; opacity: .7; margin-top: .4rem; }
+@media (min-width: 1200px) {
+  #title-block-header { position: relative; }
+  #title-block-header .quarto-title-meta { position: absolute; right: calc(100% + 2.5rem); top: 0; width: 9rem; display: grid; grid-template-columns: 1fr !important; text-align: right; }
+  #title-block-header .quarto-title-meta > div { margin-bottom: 1rem; }
+}
+body.quarto-dark .mh-explorer { border-color: rgba(168, 162, 207, .2); }
+body.quarto-dark .mh-chart [stroke="#B51D5A"] { stroke: #F978AE; }
+body.quarto-dark .mh-chart [fill="#B51D5A"] { fill: #F978AE; }
+body.quarto-dark .mh-chart [stroke="#343A8F"] { stroke: #A8A2CF; }
+body.quarto-dark .mh-chart [fill="#343A8F"] { fill: #A8A2CF; }
+body.quarto-dark .mh-chart [stroke="#A8A2CF"] { stroke: #5350A0; }
+body.quarto-dark .mh-chart g[aria-label="tip"] { fill: #1F1A52; }
+</style>
