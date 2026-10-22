@@ -1,5 +1,33 @@
 [
   {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "About me",
+    "section": "",
+    "text": "I’m a PhD student in Health Economics and Policy in the Department of Health Policy and Management at the Johns Hopkins Bloomberg School of Public Health. I study supply-side health policy. Much of my work focuses on behavioral health and on licensing reform, especially interstate licensing. I’m also interested in injury prevention and health equity.\nBefore Hopkins, I was a pre-doctoral research professional at the University of Chicago’s Development Innovation Lab and a research assistant at the Hamilton Project at the Brookings Institution. I’m affiliated with the Johns Hopkins Center for Mental Health and Addiction Policy and the Center for Gun Violence Solutions."
+  },
+  {
+    "objectID": "about/index.html#education",
+    "href": "about/index.html#education",
+    "title": "About me",
+    "section": "Education",
+    "text": "Education\nPhD, Health Economics and Policy, Johns Hopkins Bloomberg School of Public Health, expected 2029\nBS, Mathematics; BA, Economics, University of Chicago, 2022"
+  },
+  {
+    "objectID": "about/index.html#interests",
+    "href": "about/index.html#interests",
+    "title": "About me",
+    "section": "Interests",
+    "text": "Interests\nSupply-side health policy · health care labor markets · behavioral health · interstate licensing · injury prevention · health equity"
+  },
+  {
+    "objectID": "about/index.html#get-in-touch",
+    "href": "about/index.html#get-in-touch",
+    "title": "About me",
+    "section": "Get in touch",
+    "text": "Get in touch\nI’m always happy to talk about research, data, or the health care workforce. The best way to reach me is email.\n Send me a note"
+  },
+  {
     "objectID": "projects/mh-facility-trends-2026-10/index.html",
     "href": "projects/mh-facility-trends-2026-10/index.html",
     "title": "Trends in the Services Offered by US Mental Health Treatment Facilities, 2015–2024",
@@ -35,32 +63,46 @@
     "text": "Data and methods\n\nDownload the data\n\ntrends.csv: one row per item and year, with the item name, group, share of facilities offering it, and the number of facilities that answered.\nsample.csv: the number of facilities in the sample each year.\n\nPlease cite this page if you use the data. The data and code are archived on Zenodo: doi:10.5281/zenodo.23550528.\n\n\nSources\nThe 2015 to 2020 data come from the National Mental Health Services Survey (N-MHSS). In 2021, SAMHSA merged N-MHSS with the National Survey of Substance Abuse Treatment Services (N-SSATS) into one survey, the National Substance Use and Mental Health Services Survey (N-SUMHSS). I use the public-use files for every year, all from SAMHSA:\n\nN-MHSS: 2015, 2016, 2017, 2018, 2019, 2020\nN-SUMHSS: 2021, 2022, 2023, 2024\n\nThe series starts in 2015 because of a change in question format. The 2014 survey asked about each service as its own yes-or-no question. From 2015 on, the survey lists the services and asks facilities to mark all that apply. The two formats give quite different answers for the same item: 66% of facilities reported suicide prevention services in 2014, against 48% in 2015 and 54% in 2016. I left 2014 out so that every year in the charts uses the same format.\n\n\nWhich facilities count\nFor 2015 to 2020, I include every facility in the N-MHSS file. For 2021 to 2024, I include the facilities that completed the mental health section of N-SUMHSS, since these items are blank for facilities that only treat substance use. That is the closest match to the old N-MHSS group, though the two groups differ somewhat. Keep this switch in mind when comparing 2020 with 2021. In 2024 the mental health section grew to about 14,300 facilities, up from about 10,100 in 2023, so the 2024 point reflects a larger group with more outpatient providers.\nThe table shows how many facilities are in the sample each year. The total counts facility-years: most facilities answer in several years, so it is not a count of distinct facilities.\n\n\nCode\nsample = FileAttachment(\"sample.csv\").csv({ typed: true })\nhtml`&lt;table class=\"table mh-sample\"&gt;\n  &lt;caption&gt;Facilities in the sample by year, 2015–2024&lt;/caption&gt;\n  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Year&lt;/th&gt;&lt;th&gt;Survey&lt;/th&gt;&lt;th class=\"num\"&gt;Facilities&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;\n  &lt;tbody&gt;${sample.map(d =&gt; html`&lt;tr&gt;&lt;td&gt;${d.year}&lt;/td&gt;&lt;td&gt;${d.year &gt;= 2021 ? \"N-SUMHSS\" : \"N-MHSS\"}&lt;/td&gt;&lt;td class=\"num\"&gt;${d3.format(\",\")(d.facilities)}&lt;/td&gt;&lt;/tr&gt;`)}&lt;/tbody&gt;\n  &lt;tfoot&gt;&lt;tr&gt;&lt;th&gt;Total&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;th class=\"num\"&gt;${d3.format(\",\")(d3.sum(sample, d =&gt; d.facilities))}&lt;/th&gt;&lt;/tr&gt;&lt;/tfoot&gt;\n&lt;/table&gt;`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMissing answers\nEach share counts only the facilities that answered that question in that year. The numerator is facilities answering “yes” and the denominator is facilities answering “yes” or “no.” If a facility skipped a question, left it blank, or has a missing code (−1 or −2), I drop it from that item’s share for that year. It still counts toward every other item it answered, so denominators differ across items and years. Hover over any point to see how many facilities answered.\n\n\nMatching items across years\nI kept only items asked in all ten years with the same yes/no coding: 54 in total. Most kept the same variable name throughout. I left out items first asked after 2015, such as transcranial magnetic stimulation, ketamine, and EMDR, because they don’t have a full series. The substance use side of the survey isn’t covered here either.\n\n\nCaveats\nService offerings are self-reported by facility staff. Response rates differ by year (see each year’s codebook).\n\n\nUse of AI\nI built this page with Claude Opus 5.5, an AI model made by Anthropic. Claude matched variables across the survey years, wrote the code that cleans the data and draws the charts, and drafted the text. I chose the questions, checked the results against the survey files, and edited the writing."
   },
   {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "About me",
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
     "section": "",
-    "text": "I’m a PhD student in Health Economics and Policy in the Department of Health Policy and Management at the Johns Hopkins Bloomberg School of Public Health. I study supply-side health policy. Much of my work focuses on behavioral health and on licensing reform, especially interstate licensing. I’m also interested in injury prevention and health equity.\nBefore Hopkins, I was a pre-doctoral research professional at the University of Chicago’s Development Innovation Lab and a research assistant at the Hamilton Project at the Brookings Institution. I’m affiliated with the Johns Hopkins Center for Mental Health and Addiction Policy and the Center for Gun Violence Solutions."
+    "text": "Changes in the Demographic Composition of US Gun Ownership, 2013–2025\nWith J. A. Ward, R. Valek, V. C. Jones, A. D. McCourt, and C. K. Crifasi.\nUnder review, AJPM Focus.\nInterstate Telehealth Registration and the Expansion of Oncology Physician Supply: Evidence from Florida\nWith D. Polsky and H. Hughes.\nUnder review, Health Affairs Scholar."
   },
   {
-    "objectID": "about/index.html#education",
-    "href": "about/index.html#education",
-    "title": "About me",
-    "section": "Education",
-    "text": "Education\nPhD, Health Economics and Policy, Johns Hopkins Bloomberg School of Public Health, expected 2029\nBS, Mathematics; BA, Economics, University of Chicago, 2022"
+    "objectID": "research/index.html#working-papers",
+    "href": "research/index.html#working-papers",
+    "title": "Research",
+    "section": "",
+    "text": "Changes in the Demographic Composition of US Gun Ownership, 2013–2025\nWith J. A. Ward, R. Valek, V. C. Jones, A. D. McCourt, and C. K. Crifasi.\nUnder review, AJPM Focus.\nInterstate Telehealth Registration and the Expansion of Oncology Physician Supply: Evidence from Florida\nWith D. Polsky and H. Hughes.\nUnder review, Health Affairs Scholar."
   },
   {
-    "objectID": "about/index.html#interests",
-    "href": "about/index.html#interests",
-    "title": "About me",
-    "section": "Interests",
-    "text": "Interests\nSupply-side health policy · health care labor markets · behavioral health · interstate licensing · injury prevention · health equity"
+    "objectID": "research/index.html#work-in-progress",
+    "href": "research/index.html#work-in-progress",
+    "title": "Research",
+    "section": "Work in progress",
+    "text": "Work in progress\nDo State Directed Payments Buy Better Care?\nWith K. Shen and M. D. Eisenberg.\nThe Effect of Sports Betting Legalization on the Supply of Gambling Disorder Treatment\nWith B. Westermeyer, M. Meiselbach, and M. D. Eisenberg.\nTrends in US Children Living in Households with Firearms, 2013–2025\nWith C. K. Crifasi.\nDisparities in Glasses Use Among Mexican Public Primary School Children with Refractive Errors, 2013–2024\nWith A. Kamei and P. A. Peña."
   },
   {
-    "objectID": "about/index.html#get-in-touch",
-    "href": "about/index.html#get-in-touch",
-    "title": "About me",
-    "section": "Get in touch",
-    "text": "Get in touch\nI’m always happy to talk about research, data, or the health care workforce. The best way to reach me is email.\n Send me a note"
+    "objectID": "research/index.html#policy-reports",
+    "href": "research/index.html#policy-reports",
+    "title": "Research",
+    "section": "Policy reports",
+    "text": "Policy reports\nBauer, L., Creeron, A., Dada, J., & Macedo, L. (2023). Nurse Licensure Compacts Before, During, and After COVID. The Hamilton Project Research Brief, Brookings Institution."
+  },
+  {
+    "objectID": "research/index.html#presentations",
+    "href": "research/index.html#presentations",
+    "title": "Research",
+    "section": "Presentations",
+    "text": "Presentations\n“The Impact of the Nurse Licensure Compact on Labor Mobility Before and During the COVID-19 Pandemic.” Supply-Side Economics in Healthcare Conference, University of Chicago, 2024."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Trends in the Services Offered by US Mental Health Treatment Facilities, 2015–2024\n\n\n\nN-SUMHSS\n\nbehavioral health\n\ndata tool\n\n\n\nAn interactive look at the share of U.S. mental health treatment facilities offering suicide prevention, eating disorder programs, telehealth, peer support, and 50-plus…\n\n\n\nOct 21, 2026\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "cv/index.html",
@@ -131,47 +173,5 @@
     "title": "CV",
     "section": "Skills",
     "text": "Skills\nProgramming: R, Stata, Python, SQL, LaTeX, Linux\nRestricted data: CMS Medicare and Medicaid claims (TAF, MBSF) via ResDAC; NVSS restricted-use mortality files\nLanguages: English (native), Mandarin Chinese (intermediate)"
-  },
-  {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "Research",
-    "section": "",
-    "text": "Changes in the Demographic Composition of US Gun Ownership, 2013–2025\nWith J. A. Ward, R. Valek, V. C. Jones, A. D. McCourt, and C. K. Crifasi.\nUnder review, AJPM Focus.\nInterstate Telehealth Registration and the Expansion of Oncology Physician Supply: Evidence from Florida\nWith D. Polsky and H. Hughes.\nUnder review, Health Affairs Scholar."
-  },
-  {
-    "objectID": "research/index.html#working-papers",
-    "href": "research/index.html#working-papers",
-    "title": "Research",
-    "section": "",
-    "text": "Changes in the Demographic Composition of US Gun Ownership, 2013–2025\nWith J. A. Ward, R. Valek, V. C. Jones, A. D. McCourt, and C. K. Crifasi.\nUnder review, AJPM Focus.\nInterstate Telehealth Registration and the Expansion of Oncology Physician Supply: Evidence from Florida\nWith D. Polsky and H. Hughes.\nUnder review, Health Affairs Scholar."
-  },
-  {
-    "objectID": "research/index.html#work-in-progress",
-    "href": "research/index.html#work-in-progress",
-    "title": "Research",
-    "section": "Work in progress",
-    "text": "Work in progress\nDo State Directed Payments Buy Better Care?\nWith K. Shen and M. D. Eisenberg.\nThe Effect of Sports Betting Legalization on the Supply of Gambling Disorder Treatment\nWith B. Westermeyer, M. Meiselbach, and M. D. Eisenberg.\nTrends in US Children Living in Households with Firearms, 2013–2025\nWith C. K. Crifasi.\nDisparities in Glasses Use among Mexican Public Primary School Children with Refractive Errors, 2013–2024\nWith A. Kamei and P. A. Peña."
-  },
-  {
-    "objectID": "research/index.html#policy-reports",
-    "href": "research/index.html#policy-reports",
-    "title": "Research",
-    "section": "Policy reports",
-    "text": "Policy reports\nBauer, L., Creeron, A., Dada, J., & Macedo, L. (2023). Nurse Licensure Compacts Before, During, and After COVID. The Hamilton Project Research Brief, Brookings Institution."
-  },
-  {
-    "objectID": "research/index.html#presentations",
-    "href": "research/index.html#presentations",
-    "title": "Research",
-    "section": "Presentations",
-    "text": "Presentations\n“The Impact of the Nurse Licensure Compact on Labor Mobility Before and During the COVID-19 Pandemic.” Supply-Side Economics in Healthcare Conference, University of Chicago, 2024."
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Trends in the Services Offered by US Mental Health Treatment Facilities, 2015–2024\n\n\n\nN-SUMHSS\n\nbehavioral health\n\ndata tool\n\n\n\nAn interactive look at the share of U.S. mental health treatment facilities offering suicide prevention, eating disorder programs, telehealth, peer support, and 50-plus…\n\n\n\nOct 21, 2026\n\n\n\n\n\n\nNo matching items\n Back to top"
   }
 ]
