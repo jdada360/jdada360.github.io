@@ -1,0 +1,9 @@
+/.quarto/
+/_site/
+*_files/libs/
+data/raw/
+*.csv.gz
+.Rproj.user
+.DS_Store
+
+**/*.quarto_ipynb

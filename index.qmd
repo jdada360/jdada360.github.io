@@ -1,0 +1,32 @@
+---
+pagetitle: "Joy Dada"
+page-layout: custom
+section-divs: false
+toc: false
+---
+
+::: {.landing}
+
+
+
+::: {.landing-name}
+Joy Dada
+:::
+
+::: {.landing-role}
+PhD Student · Health Economics & Policy · Johns Hopkins
+:::
+
+::: {.landing-blurb}
+I study **supply-side health policy**. I'm most interested in the availability of behavioral health services and how we regulate the health care workforce. This site includes my [research](research/index.qmd), my [CV](cv/index.qmd), and a running notebook of [small projects](projects/index.qmd) built on publicly available data.
+:::
+
+::: {.landing-links}
+[<i class="bi bi-person"></i> About](about/index.qmd){.landing-btn}
+[<i class="bi bi-envelope"></i> Email](mailto:jdada3@jhu.edu){.landing-btn}
+[<i class="bi bi-linkedin"></i> LinkedIn](https://www.linkedin.com/in/joy-dada/){.landing-btn}
+[<i class="bi bi-github"></i> GitHub](https://github.com/jdada360){.landing-btn}
+[<i class="bi bi-file-earmark-text"></i> CV](cv/cv.pdf){.landing-btn}
+:::
+
+:::

@@ -1,0 +1,7 @@
+citation: true
+google-scholar: true
+appendix-cite-as: display
+freeze: auto
+execute:
+  warning: false
+toc: true

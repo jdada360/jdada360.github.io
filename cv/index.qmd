@@ -1,0 +1,61 @@
+---
+title: "CV"
+subtitle: "[Download PDF](cv.pdf){.btn .btn-primary .btn-sm} · Updated October 2026"
+---
+
+## Education
+
+**PhD, Health Economics and Policy**, Johns Hopkins Bloomberg School of Public Health, 2025–2029 (expected) \
+Advisor: Matthew D. Eisenberg
+
+**BS, Mathematics; BA, Economics**, University of Chicago, 2022
+
+## Affiliations
+
+Center for Mental Health and Addiction Policy, Johns Hopkins Bloomberg School of Public Health \
+Center for Gun Violence Solutions, Johns Hopkins Bloomberg School of Public Health
+
+## Research interests
+
+**Primary:** supply-side health policy, health care labor market regulation, behavioral health \
+**Secondary:** injury prevention, health equity
+
+## Fellowships, honors & awards
+
+- Show-Chwan Departmental Doctoral Scholarship, Johns Hopkins Bloomberg School of Public Health, 2025–2029
+- Pre-doctoral Health Economics Dissertation Fellowship, Initiative on Enabling Choice and Competition in Health Care, University of Chicago, 2024
+- Kiphart Collegiate Fellowship, Kiphart Center for Global Health and Social Development, University of Chicago, 2022
+- Kapani Metcalf Fellowship, Becker Friedman Institute for Economics, University of Chicago, 2022
+- University Academic Merit Scholarship, University of Chicago, 2019–2022
+
+## Research and publications
+
+See the [Research](../research/index.qmd) page.
+
+## Research experience
+
+**Graduate Research Assistant**, Department of Health Policy and Management, Johns Hopkins, 2025–present \
+With Matthew Eisenberg, Karen Shen, Andrew Anderson, and Cassandra Crifasi.
+
+**Pre-doctoral Research Professional**, Development Innovation Lab, University of Chicago (PI: Michael Kremer), 2023–2025 \
+**Research Assistant**, Development Innovation Lab, University of Chicago, 2022–2023
+
+**Research Assistant Intern**, The Hamilton Project, Brookings Institution (with Lauren Bauer and Wendy Edelberg), 2022–2023
+
+## Teaching
+
+**Teaching Assistant**, Johns Hopkins Bloomberg School of Public Health \
+Introduction to the US Health Care System, Fall 2026 · Introduction to Health Economics, Winter 2026
+
+**Guest lecture:** Introduction to R for Economic Analysis, Universidad Panamericana, 2026
+
+## Service
+
+- Co-Chair, Research Working Group, Licensure Innovation for Telehealth Transformation (LIFTT), Johns Hopkins Medicine and American Telemedicine Association, 2026–present
+- Ad hoc referee: *Health Affairs Scholar*; *Health Services Research*
+
+## Skills
+
+**Programming:** R, Stata, Python, SQL, LaTeX, Linux \
+**Restricted data:** CMS Medicare and Medicaid claims (TAF, MBSF) via ResDAC; NVSS restricted-use mortality files \
+**Languages:** English (native), Mandarin Chinese (intermediate)

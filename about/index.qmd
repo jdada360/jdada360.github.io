@@ -1,0 +1,40 @@
+---
+title: "About me"
+image: ../assets/img/profile.jpg
+about:
+  template: trestles
+  image-shape: round
+  image-width: 18em
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:jdada3@jhu.edu
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/joy-dada/
+    - icon: github
+      text: GitHub
+      href: https://github.com/jdada360
+    - icon: file-earmark-text
+      text: CV
+      href: ../cv/index.qmd
+---
+
+I'm a PhD student in Health Economics and Policy in the Department of Health Policy and Management at the Johns Hopkins Bloomberg School of Public Health. I study **supply-side health policy**. Much of my work focuses on behavioral health and on licensing reform, especially interstate licensing. I'm also interested in injury prevention and health equity.
+
+Before Hopkins, I was a pre-doctoral research professional at the University of Chicago's Development Innovation Lab and a research assistant at the Hamilton Project at the Brookings Institution. I'm affiliated with the Johns Hopkins Center for Mental Health and Addiction Policy and the Center for Gun Violence Solutions.
+
+## Education
+
+**PhD, Health Economics and Policy**, Johns Hopkins Bloomberg School of Public Health, expected 2029 \
+**BS, Mathematics; BA, Economics**, University of Chicago, 2022
+
+## Interests
+
+Supply-side health policy · health care labor markets · behavioral health · interstate licensing · injury prevention · health equity
+
+## Get in touch
+
+I'm always happy to talk about research, data, or the health care workforce. The best way to reach me is email.
+
+[<i class="bi bi-envelope"></i> Send me a note](mailto:jdada3@jhu.edu){.btn .btn-primary}

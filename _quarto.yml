@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "joydada"
+  site-url: https://jdada360.github.io
+  description: "Joy Dada — research, small projects, maps, and CV."
+  page-navigation: true
+  back-to-top-navigation: true
+  favicon: assets/img/logo.svg
+  navbar:
+    logo: assets/img/logo.svg
+    logo-alt: "joydada fingerprint logo"
+    right:
+      - text: About
+        href: about/index.qmd
+      - text: Research
+        href: research/index.qmd
+      - text: Projects
+        href: projects/index.qmd
+      - text: CV
+        href: cv/index.qmd
+      - icon: github
+        href: https://github.com/jdada360
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 Joy Dada · Made with [Quarto](https://quarto.org)"
+    right: "Design inspired by [Silvia Canelón](https://silviacanelon.com)"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/base.scss, styles/light.scss, styles/_palette.scss]
+      dark:  [cosmo, styles/base.scss, styles/dark.scss, styles/_palette.scss]
+    toc: false
+    code-fold: true
+    code-tools: false
+    smooth-scroll: true
+
+execute:
+  freeze: auto

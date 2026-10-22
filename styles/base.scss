@@ -1,0 +1,67 @@
+/*-- scss:rules --*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Figtree:wght@400;500;700&family=JetBrains+Mono&display=swap');
+
+body { font-size: 1.2rem; line-height: 1.6; }
+h1.title, .about-entity h1 { font-weight: 500; letter-spacing: -.005em; }
+
+a { text-underline-offset: .18em; text-decoration-thickness: .08em; }
+a:hover { color: $jd-accent; text-decoration-thickness: .14em; }
+
+.navbar-brand, .navbar .menu-text { font-family: $headings-font-family; }
+.navbar-brand { font-weight: 700; font-size: 1.35rem; }
+
+// Apéro-style hero on the about/home page
+.about-entity .about-image { border: 4px solid $jd-accent; object-position: 50% 12%; }
+.about-link {
+  border: 1px solid $jd-card-border !important;
+  border-radius: 999px !important;
+  padding: .3rem .9rem !important;
+  color: $jd-accent !important;
+  &:hover { background: $jd-accent; color: $body-bg !important; }
+}
+
+// listing cards
+.quarto-grid-item.card, .list.quarto-listing-default > div {
+  background: $jd-card-bg;
+  border: 1px solid $jd-card-border;
+  border-radius: $border-radius;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.quarto-grid-item.card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba($pink-700, .15); }
+.listing-categories .listing-category, .quarto-category {
+  border-color: $jd-accent; color: $jd-accent; border-radius: 999px;
+}
+.listing-date, .listing-reading-time, .text-muted { color: $jd-muted !important; }
+
+// pink rule under page titles
+#title-block-header h1.title::after {
+  content: ""; display: block; width: 3.5rem; height: .3rem;
+  margin-top: .6rem; border-radius: 999px; background: $jd-accent;
+}
+
+.callout, .quarto-appendix-contents { border-radius: $border-radius; }
+::selection { background: $pink-300; color: $indigo-900; }
+
+.navbar-logo { height: 30px; width: 30px; max-height: 30px; margin-right: .4rem; transition: transform .2s ease; }
+.navbar-brand:hover .navbar-logo { transform: scale(1.15); }
+
+// centered landing page
+.landing {
+  min-height: calc(100vh - 160px);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; max-width: 42rem; margin: 0 auto; padding: 3rem 1rem;
+}
+.landing-name {
+  font-family: $headings-font-family; font-weight: 500; color: $headings-color;
+  font-size: clamp(2.8rem, 8vw, 4.5rem); line-height: 1.05; letter-spacing: -.01em;
+}
+.landing-role { font-family: $headings-font-family; color: $jd-muted; font-size: 1.15rem; margin-top: 1.1rem; letter-spacing: .02em; }
+.landing-blurb { font-size: 1.3rem; margin-top: 1.6rem; }
+.landing-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: 1.6rem;
+  p { display: contents; } }
+.landing-btn {
+  border: 1px solid $jd-accent; border-radius: 999px; padding: .35rem 1rem;
+  font-family: $headings-font-family; font-size: .95rem; text-decoration: none; color: $jd-accent;
+  &:hover { background: $jd-accent; color: $body-bg; }
+}
+

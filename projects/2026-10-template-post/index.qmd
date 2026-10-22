@@ -1,0 +1,51 @@
+---
+title: "Template: how a project post works"
+description: "A demo post showing code, a chart, an interactive map, and the automatic citation block. Copy this folder to start a new project."
+date: 2026-10-21
+author: Joy Dada
+draft: true
+categories: [template, maps]
+image: thumbnail.png
+---
+
+This is a **template post**. Every folder in `projects/` with an `index.qmd` shows up on the Projects page. The chart below uses R's built-in `USArrests` data as a stand-in. Swap in your own analysis, such as the NPPES work.
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+library(ggplot2)
+source(here::here("R/theme_joydada.R"))
+df <- data.frame(state = rownames(USArrests), USArrests)
+```
+
+## A chart in the site palette
+
+```{r}
+#| label: fig-bar
+#| fig-cap: "Urban population share, top 12 states (USArrests, 1973)."
+top <- head(df[order(-df$UrbanPop), ], 12)
+p <- ggplot(top, aes(reorder(state, UrbanPop), UrbanPop)) +
+  geom_col(fill = jd_pink[3], width = .7) +
+  coord_flip() +
+  labs(x = NULL, y = "Urban population (%)", title = "Most urban states, 1973") +
+  theme_joydada()
+ggsave("thumbnail.png", p, width = 6, height = 4, dpi = 150, bg = "white")
+p
+```
+
+## An interactive map
+
+```{r}
+#| label: map
+library(leaflet)
+leaflet() |>
+  addProviderTiles(providers$CartoDB.Positron) |>
+  setView(-96, 38, zoom = 3) |>
+  addCircleMarkers(lng = -75.16, lat = 39.95, radius = 8,
+                   color = jd_pink[3], fillOpacity = .8, label = "Example point")
+```
+
+## Citing this post
+
+Because `citation: true` is set in `projects/_metadata.yml`, Quarto adds a **Citation** section with BibTeX at the bottom of every project post. To get a DOI, connect the repo to Zenodo and cut a GitHub release.
