@@ -4,7 +4,9 @@
 #   scripts/update-cv.sh          compile, refresh cv/, then show what changed
 #   scripts/update-cv.sh --push   ...and commit + push, which publishes the site
 #
-# Writes cv/cv.pdf (download) and cv/page-N.png (the pages shown on the CV page).
+# Writes cv/cv.pdf (download), cv/page-N.png (the pages shown on the CV page),
+# and research/index.qmd (generated from the CV's Publications, Working Papers
+# and Presentations sections).
 set -euo pipefail
 
 SRC="${CV_SRC:-$HOME/Library/CloudStorage/Dropbox/Apps/Overleaf/CV/main.tex}"
@@ -33,10 +35,12 @@ for i in $(seq 1 $(ls "$SITE"/cv/page-*.png | wc -l)); do
   echo >> "$SITE/cv/_pages.md"
 done
 
+python3 "$SITE/scripts/cv_to_research.py" "$SRC" "$SITE/research/index.qmd"
+
 echo "CV updated: $(ls "$SITE"/cv/page-*.png | wc -l | tr -d ' ') page(s)"
-git -C "$SITE" status --short cv/
+git -C "$SITE" status --short cv/ research/
 
 if [[ "${1:-}" == "--push" ]]; then
-  git -C "$SITE" add cv/
-  git -C "$SITE" commit -m "Update CV from Overleaf" && git -C "$SITE" push
+  git -C "$SITE" add cv/ research/
+  git -C "$SITE" commit -m "Update CV and Research page from Overleaf" && git -C "$SITE" push
 fi
