@@ -18,7 +18,7 @@ PhD Student · Health Economics & Policy · Johns Hopkins
 :::
 
 ::: {.landing-blurb}
-I study **supply-side health policy**. I'm most interested in the availability of behavioral health services and how we regulate the health care workforce. This site includes my [research](research/index.qmd), my [CV](cv/index.qmd), and a running notebook of [small projects](projects/index.qmd) built on publicly available data.
+I study **occupational licensing and interstate telehealth**, and the **supply of and access to behavioral health care**. I also work on firearm injury prevention. This site includes my [research](research/index.qmd), my [CV](cv/index.qmd), and a running notebook of [small projects](projects/index.qmd) built on publicly available data.
 :::
 
 ::: {.landing-links}
