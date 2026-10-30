@@ -73,3 +73,12 @@ a:hover { color: $jd-accent; text-decoration-thickness: .14em; }
   &:hover { background: $jd-accent; color: $body-bg; }
 }
 
+
+// CV shown as page images
+.cv-pages { margin-top: 1.5rem; }
+.cv-pages p { margin: 0 0 1.25rem; }
+.cv-page {
+  display: block; width: 100%; height: auto; background: #fff;
+  border: 1px solid $jd-card-border; border-radius: .4rem;
+  box-shadow: 0 4px 18px rgba($indigo-900, .08);
+}
