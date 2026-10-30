@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "CV",
+    "section": "",
+    "text": "Download PDF\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "projects/mh-facility-trends-2026-10/index.html",
     "href": "projects/mh-facility-trends-2026-10/index.html",
     "title": "Trends in the Services Offered by US Mental Health Treatment Facilities, 2015–2024",
@@ -63,74 +70,11 @@
     "text": "Get in touch\nI’m always happy to talk about research, data, or the health care workforce. The best way to reach me is email.\n Send me a note"
   },
   {
-    "objectID": "cv/index.html",
-    "href": "cv/index.html",
-    "title": "CV",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
     "section": "",
-    "text": "PhD, Health Economics and Policy, Johns Hopkins Bloomberg School of Public Health, 2025–2029 (expected)\nAdvisor: Matthew D. Eisenberg\nBS, Mathematics; BA, Economics, University of Chicago, 2022"
-  },
-  {
-    "objectID": "cv/index.html#education",
-    "href": "cv/index.html#education",
-    "title": "CV",
-    "section": "",
-    "text": "PhD, Health Economics and Policy, Johns Hopkins Bloomberg School of Public Health, 2025–2029 (expected)\nAdvisor: Matthew D. Eisenberg\nBS, Mathematics; BA, Economics, University of Chicago, 2022"
-  },
-  {
-    "objectID": "cv/index.html#affiliations",
-    "href": "cv/index.html#affiliations",
-    "title": "CV",
-    "section": "Affiliations",
-    "text": "Affiliations\nCenter for Mental Health and Addiction Policy, Johns Hopkins Bloomberg School of Public Health\nCenter for Gun Violence Solutions, Johns Hopkins Bloomberg School of Public Health\nHopkins Business of Health Initiative, Johns Hopkins University\nLicensure Innovation for Telehealth Transformation, Johns Hopkins University"
-  },
-  {
-    "objectID": "cv/index.html#research-interests",
-    "href": "cv/index.html#research-interests",
-    "title": "CV",
-    "section": "Research interests",
-    "text": "Research interests\nPrimary: supply-side health policy, health care labor market regulation, behavioral health\nSecondary: injury prevention, health equity"
-  },
-  {
-    "objectID": "cv/index.html#fellowships-honors-awards",
-    "href": "cv/index.html#fellowships-honors-awards",
-    "title": "CV",
-    "section": "Fellowships, honors & awards",
-    "text": "Fellowships, honors & awards\n\nShow-Chwan Departmental Doctoral Scholarship, Johns Hopkins Bloomberg School of Public Health, 2025–2029\nPre-doctoral Health Economics Dissertation Fellowship, Initiative on Enabling Choice and Competition in Health Care, University of Chicago, 2024\nKiphart Collegiate Fellowship, Kiphart Center for Global Health and Social Development, University of Chicago, 2022\nKapani Metcalf Fellowship, Becker Friedman Institute for Economics, University of Chicago, 2022\nUniversity Academic Merit Scholarship, University of Chicago, 2019–2022"
-  },
-  {
-    "objectID": "cv/index.html#research-and-publications",
-    "href": "cv/index.html#research-and-publications",
-    "title": "CV",
-    "section": "Research and publications",
-    "text": "Research and publications\nSee the Research page."
-  },
-  {
-    "objectID": "cv/index.html#research-experience",
-    "href": "cv/index.html#research-experience",
-    "title": "CV",
-    "section": "Research experience",
-    "text": "Research experience\nGraduate Research Assistant, Department of Health Policy and Management, Johns Hopkins, 2025–present\nWith Matthew Eisenberg, Karen Shen, Andrew Anderson, and Cassandra Crifasi.\nPre-doctoral Research Professional, Development Innovation Lab, University of Chicago (PI: Michael Kremer), 2023–2025\nResearch Assistant, Development Innovation Lab, University of Chicago, 2022–2023\nResearch Assistant Intern, The Hamilton Project, Brookings Institution (with Lauren Bauer and Wendy Edelberg), 2022–2023"
-  },
-  {
-    "objectID": "cv/index.html#teaching",
-    "href": "cv/index.html#teaching",
-    "title": "CV",
-    "section": "Teaching",
-    "text": "Teaching\nTeaching Assistant, Johns Hopkins Bloomberg School of Public Health\nIntroduction to the US Health Care System, Fall 2026 · Introduction to Health Economics, Winter 2026\nGuest lecture: Introduction to R for Economic Analysis, Universidad Panamericana, 2026"
-  },
-  {
-    "objectID": "cv/index.html#service",
-    "href": "cv/index.html#service",
-    "title": "CV",
-    "section": "Service",
-    "text": "Service\n\nCo-Chair, Research Working Group, Licensure Innovation for Telehealth Transformation (LIFTT), Johns Hopkins Medicine and American Telemedicine Association, 2026–present\nAd hoc referee: Health Affairs Scholar; Health Services Research"
-  },
-  {
-    "objectID": "cv/index.html#skills",
-    "href": "cv/index.html#skills",
-    "title": "CV",
-    "section": "Skills",
-    "text": "Skills\nProgramming: R, Stata, Python, SQL, LaTeX, Linux\nRestricted data: CMS Medicare and Medicaid claims (TAF, MBSF) via ResDAC; NVSS restricted-use mortality files\nLanguages: English (native), Mandarin Chinese (intermediate)"
+    "text": "Trends in the Services Offered by US Mental Health Treatment Facilities, 2015–2024\n\n\n\nN-SUMHSS\n\nbehavioral health\n\ndata tool\n\n\n\nAn interactive look at the share of U.S. mental health treatment facilities offering suicide prevention, eating disorder programs, telehealth, peer support, and 50-plus…\n\n\n\nOct 21, 2026\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "research/index.html",
@@ -166,12 +110,5 @@
     "title": "Research",
     "section": "Presentations",
     "text": "Presentations\n“The Impact of the Nurse Licensure Compact on Labor Mobility Before and During the COVID-19 Pandemic.” Supply-Side Economics in Healthcare Conference, University of Chicago, 2024."
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Trends in the Services Offered by US Mental Health Treatment Facilities, 2015–2024\n\n\n\nN-SUMHSS\n\nbehavioral health\n\ndata tool\n\n\n\nAn interactive look at the share of U.S. mental health treatment facilities offering suicide prevention, eating disorder programs, telehealth, peer support, and 50-plus…\n\n\n\nOct 21, 2026\n\n\n\n\n\n\nNo matching items\n Back to top"
   }
 ]
