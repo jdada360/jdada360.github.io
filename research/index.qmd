@@ -8,9 +8,9 @@ title: "Research"
 
 ### Peer-Reviewed Articles
 
-**Changes in the demographic composition of US gun ownership, 2013–2025** \
+**Changes in demographic composition of US gun ownership from 2013 to 2025** \
 With J. A. Ward, R. Valek, V. C. Jones, A. D. McCourt, and C. K. Crifasi. \
-Conditionally accepted, *AJPM Focus*.
+*AJPM Focus*, 100583. [doi:10.1016/j.focus.2026.100583](https://doi.org/10.1016/j.focus.2026.100583).
 
 ### Policy Reports and Public Comments
 
@@ -28,7 +28,7 @@ Under review, *JAMA Network Open*.
 
 **Trends in US children living in households with firearms, 2013–2025** \
 With R. Spicuglia and C. K. Crifasi. \
-Under review, *JAMA Pediatrics*.
+Under review, *JAMA Network Open*.
 
 ### Work in Progress
 
@@ -36,10 +36,6 @@ Under review, *JAMA Pediatrics*.
 
 **Where to go: Building a directory of crisis stabilization facilities** \
 With A. Anderson.
-
-**Practicing across state lines without a license: Physician participation in interstate telehealth registries**
-
-**Interstate telehealth registration and access to care: Evidence from Florida and Medicare**
 
 **The effect of sports betting legalization on the supply of gambling disorder treatment** \
 With B. Westermeyer, M. Meiselbach, and M. D. Eisenberg.
